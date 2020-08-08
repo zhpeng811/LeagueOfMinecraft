@@ -1,0 +1,12 @@
+{
+	"swords": [
+		{
+			"name": "death_dance",
+			"harvestlevel": 4,
+			"maxUses": 3600,
+			"efficiency": 5.0,
+			"damage": 16.0,
+			"enchantability": 30
+		}
+	]
+}
