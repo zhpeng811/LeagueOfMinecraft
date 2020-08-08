@@ -1,4 +1,4 @@
-package com.zhpeng.Weapons;
+package com.zhpeng.Swords;
 
 import net.minecraft.item.Item;
 import net.minecraft.item.Item.ToolMaterial;
@@ -13,7 +13,7 @@ public class BlackCleaver {
         float damage = 11F;
         int enchantability = 30;
         ToolMaterial toolMaterial = EnumHelper.addToolMaterial(name, harvestLevel, maxUses, efficiency, damage, enchantability);
-        Item weapon = new CustomSword(toolMaterial, name);
-        Weapons.registerWeapon(weapon);
+        Item sword = new CustomSword(toolMaterial, name);
+        Swords.registerWeapon(sword);
     }
 }

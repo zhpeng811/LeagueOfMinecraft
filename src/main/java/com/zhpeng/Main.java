@@ -24,12 +24,12 @@ public class Main {
 	@Instance
 	public static Main instance;
 	
-	public static LOMCreativeTabWeapons creativeTab;
+	public static LOMCreativeTabWeapons creativeTabWeapon;
 	
 	@EventHandler
 	public static void PreInit(FMLPreInitializationEvent e) {
-		creativeTab = new LOMCreativeTabWeapons();
-		Weapons.parseSwords();
+		creativeTabWeapon = new LOMCreativeTabWeapons();
+		Weapons.addAllWeapons();
 		proxy.preInit();
 	}
 }

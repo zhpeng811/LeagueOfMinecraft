@@ -1,4 +1,4 @@
-package com.zhpeng.Weapons;
+package com.zhpeng.Swords;
 
 import com.zhpeng.Main;
 
@@ -10,6 +10,6 @@ public class CustomSword extends ItemSword {
 		super(material);
 		this.setRegistryName(name);
 		this.setUnlocalizedName(name);
-		this.setCreativeTab(Main.creativeTab);
+		this.setCreativeTab(Main.creativeTabWeapon);
 	}
 }
