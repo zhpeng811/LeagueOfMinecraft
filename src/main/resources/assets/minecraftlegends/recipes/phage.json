@@ -1,0 +1,15 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	 "ingredients": [
+        {
+            "item": "minecraftlegends:ruby_crystal"
+        },
+        {
+            "item": "minecraftlegends:long_sword"
+        }
+    ],
+	"result": {
+		"item": "minecraftlegends:phage"
+	}
+	
+}

@@ -2,6 +2,6 @@
     "parent": "item/generated",
     "textures": 
     {
-        "layer0": "lom:items/ruby_crystal"
+        "layer0": "minecraftlegends:items/ruby_crystal"
     }
 }

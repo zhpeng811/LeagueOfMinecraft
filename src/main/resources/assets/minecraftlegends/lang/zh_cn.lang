@@ -1,5 +1,5 @@
-itemGroup.lom_weapons=我的联盟: 武器
-itemGroup.lom_items=我的联盟: 物品
+itemGroup.minecraftlegends_weapons=英雄世界: 武器
+itemGroup.minecraftlegends_items=英雄世界: 物品
 
 # swords
 item.death_dance.name=死亡之舞

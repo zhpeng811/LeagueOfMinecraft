@@ -5,9 +5,9 @@ import com.zhpeng.Items.Items;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.ItemStack;
 
-public class LOMCreativeTabItems extends CreativeTabs {
-	public LOMCreativeTabItems() {
-		super("lom_items");
+public class MLCreativeTabItems extends CreativeTabs {
+	public MLCreativeTabItems() {
+		super("minecraftlegends_items");
 	}
 
 	@Override

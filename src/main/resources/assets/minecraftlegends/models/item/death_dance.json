@@ -1,6 +1,6 @@
 {
 	"parent": "item/handheld",
 	"textures": {
-		"layer0": "lom:items/black_cleaver"
+		"layer0": "minecraftlegends:items/death_dance"
 	}
 }

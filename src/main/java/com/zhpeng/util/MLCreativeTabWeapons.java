@@ -5,9 +5,9 @@ import com.zhpeng.Weapons.Weapons;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.ItemStack;
 
-public class LOMCreativeTabWeapons extends CreativeTabs {
-	public LOMCreativeTabWeapons() {
-		super("lom_weapons");
+public class MLCreativeTabWeapons extends CreativeTabs {
+	public MLCreativeTabWeapons() {
+		super("minecraftlegends_weapons");
 	}
 
 	@Override

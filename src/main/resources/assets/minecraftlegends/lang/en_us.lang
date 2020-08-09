@@ -1,5 +1,5 @@
-itemGroup.lom_weapons=League Of Minecraft: Weapons
-itemGroup.lom_items=League Of Minecraft: Items
+itemGroup.minecraftlegends_weapons=Minecraft Legends: Weapons
+itemGroup.minecraftlegends_weapons_items=Minecraft Legends: Items
 
 # swords
 item.death_dance.name=Death Dance

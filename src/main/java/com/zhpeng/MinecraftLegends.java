@@ -11,11 +11,11 @@ import org.apache.logging.log4j.Logger;
 import com.zhpeng.Weapons.Weapons;
 import com.zhpeng.proxy.Proxy;
 import com.zhpeng.util.Config;
-import com.zhpeng.util.LOMCreativeTabItems;
-import com.zhpeng.util.LOMCreativeTabWeapons;
+import com.zhpeng.util.MLCreativeTabItems;
+import com.zhpeng.util.MLCreativeTabWeapons;
 
 @Mod(modid = Config.MODID, name = Config.NAME, version = Config.VERSION, acceptedMinecraftVersions = Config.ACCEPTED_VERSIONS)
-public class LeagueOfMinecraft {
+public class MinecraftLegends {
 	
 	public static final Logger LOGGER = LogManager.getLogger();
 	
@@ -23,10 +23,10 @@ public class LeagueOfMinecraft {
 	public static Proxy proxy;
 	
 	@Instance
-	public static LeagueOfMinecraft instance;
+	public static MinecraftLegends instance;
 	
-	public static LOMCreativeTabWeapons creativeTabWeapon = new LOMCreativeTabWeapons();
-	public static LOMCreativeTabItems creativeTabItems = new LOMCreativeTabItems();
+	public static MLCreativeTabWeapons creativeTabWeapon = new MLCreativeTabWeapons();
+	public static MLCreativeTabItems creativeTabItems = new MLCreativeTabItems();
 	
 	@EventHandler
 	public static void PreInit(FMLPreInitializationEvent e) {
