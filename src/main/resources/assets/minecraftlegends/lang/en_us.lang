@@ -1,10 +1,12 @@
 itemGroup.minecraftlegends_weapons=Minecraft Legends: Weapons
-itemGroup.minecraftlegends_weapons_items=Minecraft Legends: Items
+itemGroup.minecraftlegends_items=Minecraft Legends: Items
 
 # swords
 item.death_dance.name=Death Dance
 item.black_cleaver.name=Black Cleaver
 item.long_sword.name=Long Sword
+item.vampiric_scepter.name=Vampiric Scepter
+item.caulfield_warhammer.name=Caulfield's Warhammer
 item.phage.name=Phage
 
 # items
@@ -15,3 +17,4 @@ item.coin_500.name=500 Coins
 item.coin_1000.name=1000 Coins
 item.ruby_crystal.name=Ruby Crystal
 item.kindlegem.name=Kindlegem
+item.ageis_of_the_legion.name=Aegis of the Legion

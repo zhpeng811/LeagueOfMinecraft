@@ -19,6 +19,8 @@ public class Swords {
 	
 	public static void addAllWeapons() {
 		addWeapon("long_sword", 2, 350, 2.0F, 10F * damageRatio - swordBaseDamage, 30);
+		addWeapon("vampiric_scepter", 3, 900, 3.0F, 15F * damageRatio - swordBaseDamage, 30);
+		addWeapon("caulfield_warhammer", 3, 1100, 3.0F, 25 * damageRatio - swordBaseDamage, 30);
 		addWeapon("phage", 3, 1200, 3.0F, 15F * damageRatio - swordBaseDamage, 30);
 		addWeapon("death_dance", 4, 3600, 5.0F, 50F * damageRatio - swordBaseDamage, 30);
 		addWeapon("black_cleaver", 4, 3000, 5.0F, 40F * damageRatio - swordBaseDamage, 30);

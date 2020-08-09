@@ -1,0 +1,14 @@
+{
+    "parent":"minecraftlegends:item/shield_basic_base",
+    "textures": {
+        "layer0":"minecraftlegends:items/ageis_of_the_legion"
+    },
+    "overrides": [
+        {
+            "predicate": {
+                "blocking": 1
+            },
+            "model": "minecraftlegends:item/ageis_of_the_legion_blocking"
+        }
+    ]
+}

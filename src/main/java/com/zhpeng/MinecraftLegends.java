@@ -8,10 +8,12 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import com.zhpeng.Shields.Shields;
 import com.zhpeng.Weapons.Weapons;
 import com.zhpeng.proxy.Proxy;
 import com.zhpeng.util.Config;
 import com.zhpeng.util.MLCreativeTabItems;
+import com.zhpeng.util.MLCreativeTabShields;
 import com.zhpeng.util.MLCreativeTabWeapons;
 
 @Mod(modid = Config.MODID, name = Config.NAME, version = Config.VERSION, acceptedMinecraftVersions = Config.ACCEPTED_VERSIONS)
@@ -25,12 +27,14 @@ public class MinecraftLegends {
 	@Instance
 	public static MinecraftLegends instance;
 	
-	public static MLCreativeTabWeapons creativeTabWeapon = new MLCreativeTabWeapons();
+	public static MLCreativeTabWeapons creativeTabWeapons = new MLCreativeTabWeapons();
 	public static MLCreativeTabItems creativeTabItems = new MLCreativeTabItems();
+	public static MLCreativeTabShields creativeTabShields = new MLCreativeTabShields();
 	
 	@EventHandler
 	public static void PreInit(FMLPreInitializationEvent e) {
 		Weapons.addAllWeapons();
+		Shields.addAllShields();
 		proxy.preInit();
 	}
 }

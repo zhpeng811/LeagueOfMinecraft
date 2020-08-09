@@ -1,6 +1,7 @@
 package com.zhpeng.util;
 
-import com.zhpeng.Weapons.Weapons;
+import com.zhpeng.Shields.Shields;
+import com.zhpeng.Swords.Swords;
 
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.ItemStack;
@@ -12,6 +13,6 @@ public class MLCreativeTabWeapons extends CreativeTabs {
 
 	@Override
 	public ItemStack getTabIconItem() {
-		return new ItemStack(Weapons.weapons.get(0));
+		return new ItemStack(Swords.swords.get(0));
 	}
 }

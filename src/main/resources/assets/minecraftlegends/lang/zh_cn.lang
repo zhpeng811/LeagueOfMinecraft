@@ -1,13 +1,17 @@
+# 创造栏
 itemGroup.minecraftlegends_weapons=英雄世界: 武器
 itemGroup.minecraftlegends_items=英雄世界: 物品
+itemGroup.minecraftlegends_shields=英雄世界: 盾牌
 
-# swords
+# 剑
 item.death_dance.name=死亡之舞
 item.black_cleaver.name=黑色切割者
 item.long_sword.name=长剑
+item.vampiric_scepter.name=吸血鬼权杖
+item.caulfield_warhammer.name=考尔菲德的战锤
 item.phage.name=净蚀
 
-# items
+# 物品
 item.coin_10.name=10金币
 item.coin_50.name=50金币
 item.coin_100.name=100金币
@@ -15,3 +19,4 @@ item.coin_500.name=500金币
 item.coin_1000.name=1000金币
 item.ruby_crystal.name=红水晶
 item.kindlegem.name=燃烧宝石
+item.ageis_of_the_legion.name=军团圣盾

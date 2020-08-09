@@ -1,0 +1,27 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	 "ingredients": [
+        {
+            "item": "minecraftlegends:long_sword"
+        },
+        {
+            "item": "minecraftlegends:long_sword"
+        },
+		{
+			"item": "minecraftlegends:coin_100"
+		},
+		{
+			"item": "minecraftlegends:coin_100"
+		},
+		{
+			"item": "minecraftlegends:coin_100"
+		},
+		{
+			"item": "minecraftlegends:coin_100"
+		}
+    ],
+	"result": {
+		"item": "minecraftlegends:caulfield_warhammer"
+	}
+	
+}

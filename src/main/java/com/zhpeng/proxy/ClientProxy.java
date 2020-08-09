@@ -1,6 +1,7 @@
 package com.zhpeng.proxy;
 
 import com.zhpeng.Items.Items;
+import com.zhpeng.Shields.Shields;
 import com.zhpeng.Weapons.Weapons;
 import com.zhpeng.util.Config;
 
@@ -31,6 +32,9 @@ public class ClientProxy extends Proxy{
 		for (Item item : Items.ITEMS) {
 			registerRender(item);
 		}
+		for (Item shield : Shields.shields) {
+			registerRender(shield);
+		}
 	}
 	
 	public static void registerRender(Item item) {
@@ -45,6 +49,9 @@ public class ClientProxy extends Proxy{
 		}
 		for (Item item : Items.ITEMS) {
 			registry.registerAll(item);
+		}
+		for (Item shield : Shields.shields) {
+			registry.registerAll(shield);
 		}
 	}
 }
