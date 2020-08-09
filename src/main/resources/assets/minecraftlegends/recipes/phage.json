@@ -6,7 +6,10 @@
         },
         {
             "item": "minecraftlegends:long_sword"
-        }
+        },
+		{
+			"item": "minecraftlegends:coin_500"
+		}
     ],
 	"result": {
 		"item": "minecraftlegends:phage"

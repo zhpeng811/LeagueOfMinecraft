@@ -8,4 +8,10 @@ item.long_sword.name=Long Sword
 item.phage.name=Phage
 
 # items
+item.coin_10.name=10 Coins
+item.coin_50.name=50 Coins
+item.coin_100.name=100 Coins
+item.coin_500.name=500 Coins
+item.coin_1000.name=1000 Coins
 item.ruby_crystal.name=Ruby Crystal
+item.kindlegem.name=Kindlegem

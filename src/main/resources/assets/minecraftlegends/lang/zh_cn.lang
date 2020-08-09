@@ -8,4 +8,10 @@ item.long_sword.name=长剑
 item.phage.name=净蚀
 
 # items
+item.coin_10.name=10金币
+item.coin_50.name=50金币
+item.coin_100.name=100金币
+item.coin_500.name=500金币
+item.coin_1000.name=1000金币
 item.ruby_crystal.name=红水晶
+item.kindlegem.name=燃烧宝石

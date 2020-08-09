@@ -1,0 +1,18 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	 "ingredients": [
+        {
+            "item": "minecraftlegends:phage"
+        },
+		{
+            "item": "minecraftlegends:kindlegem"
+        },
+		{
+			"item": "minecraftlegends:coin_1000"
+		}
+    ],
+	"result": {
+		"item": "minecraftlegends:black_cleaver"
+	}
+	
+}

@@ -8,12 +8,20 @@ import net.minecraftforge.common.util.EnumHelper;
 
 public class Swords {
 	public static ArrayList<Item> swords = new ArrayList<>();
-
+	
+	// the damage in lol * damageRatio = damage in minecraft
+	// e.g. long sword +10 attack damage in lol
+	// so in minecraft it will be 10*0.4 = 4 attack damage
+	public static final float damageRatio = 0.4F;
+	
+	// ItemSword class have a base damage of 4, need to subtract it
+	public static final float swordBaseDamage = 4.0F;
+	
 	public static void addAllWeapons() {
-		addWeapon("long_sword", 2, 350, 2.0F, 0F, 30);
-		addWeapon("phage", 3, 1200, 3.0F, 4F, 30);
-		addWeapon("death_dance", 4, 3600, 5.0F, 16F, 30);
-		addWeapon("black_cleaver", 4, 3000, 5.0F, 11F, 30);
+		addWeapon("long_sword", 2, 350, 2.0F, 10F * damageRatio - swordBaseDamage, 30);
+		addWeapon("phage", 3, 1200, 3.0F, 15F * damageRatio - swordBaseDamage, 30);
+		addWeapon("death_dance", 4, 3600, 5.0F, 50F * damageRatio - swordBaseDamage, 30);
+		addWeapon("black_cleaver", 4, 3000, 5.0F, 40F * damageRatio - swordBaseDamage, 30);
 	}
 	
 	private static void addWeapon(
