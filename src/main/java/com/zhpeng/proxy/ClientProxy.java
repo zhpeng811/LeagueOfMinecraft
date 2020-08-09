@@ -1,5 +1,6 @@
 package com.zhpeng.proxy;
 
+import com.zhpeng.Items.Items;
 import com.zhpeng.Weapons.Weapons;
 import com.zhpeng.util.Config;
 
@@ -27,6 +28,9 @@ public class ClientProxy extends Proxy{
 		for (Item weapon : Weapons.weapons) {
 			registerRender(weapon);
 		}
+		for (Item item : Items.ITEMS) {
+			registerRender(item);
+		}
 	}
 	
 	public static void registerRender(Item item) {
@@ -38,6 +42,9 @@ public class ClientProxy extends Proxy{
 		IForgeRegistry<Item> registry = event.getRegistry();
 		for (Item weapon : Weapons.weapons) {
 			registry.registerAll(weapon);
+		}
+		for (Item item : Items.ITEMS) {
+			registry.registerAll(item);
 		}
 	}
 }

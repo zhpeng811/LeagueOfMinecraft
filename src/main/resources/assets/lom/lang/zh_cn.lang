@@ -1,3 +1,11 @@
-itemGroup.lom_weapons=我的联盟
+itemGroup.lom_weapons=我的联盟: 武器
+itemGroup.lom_items=我的联盟: 物品
+
+# swords
 item.death_dance.name=死亡之舞
 item.black_cleaver.name=黑色切割者
+item.long_sword.name=长剑
+item.phage.name=净蚀
+
+# items
+item.ruby_crystal.name=红水晶

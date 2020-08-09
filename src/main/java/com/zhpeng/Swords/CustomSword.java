@@ -1,6 +1,6 @@
 package com.zhpeng.Swords;
 
-import com.zhpeng.Main;
+import com.zhpeng.LeagueOfMinecraft;
 
 import net.minecraft.item.ItemSword;
 
@@ -10,6 +10,6 @@ public class CustomSword extends ItemSword {
 		super(material);
 		this.setRegistryName(name);
 		this.setUnlocalizedName(name);
-		this.setCreativeTab(Main.creativeTabWeapon);
+		this.setCreativeTab(LeagueOfMinecraft.creativeTabWeapon);
 	}
 }

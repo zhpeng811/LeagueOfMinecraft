@@ -1,3 +1,11 @@
-itemGroup.lom_weapons=League Of Minecraft
+itemGroup.lom_weapons=League Of Minecraft: Weapons
+itemGroup.lom_items=League Of Minecraft: Items
+
+# swords
 item.death_dance.name=Death Dance
 item.black_cleaver.name=Black Cleaver
+item.long_sword.name=Long Sword
+item.phage.name=Phage
+
+# items
+item.ruby_crystal.name=Ruby Crystal
