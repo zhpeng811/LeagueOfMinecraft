@@ -1,0 +1,30 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	 "ingredients": [
+        {
+            "item": "minecraftlegends:long_sword"
+        },
+        {
+            "item": "minecraftlegends:long_sword"
+        },
+		{
+			"item": "minecraftlegends:coin_100"
+		},
+		{
+			"item": "minecraftlegends:coin_100"
+		},
+		{
+			"item": "minecraftlegends:coin_100"
+		},
+		{
+			"item": "minecraftlegends:coin_100"
+		},
+		{
+			"item": "minecraftlegends:coin_10"
+		},
+    ],
+	"result": {
+		"item": "minecraftlegends:serrated_dirk"
+	}
+	
+}

@@ -2,6 +2,7 @@
 itemGroup.minecraftlegends_weapons=英雄世界: 武器
 itemGroup.minecraftlegends_items=英雄世界: 物品
 itemGroup.minecraftlegends_shields=英雄世界: 盾牌
+itemGroup.minecraftlegends_armors=英雄世界: 防具
 
 # 剑
 item.death_dance.name=死亡之舞
@@ -10,6 +11,9 @@ item.long_sword.name=长剑
 item.vampiric_scepter.name=吸血鬼权杖
 item.caulfield_warhammer.name=考尔菲德的战锤
 item.phage.name=净蚀
+item.duskblade_of_draktharr.name=德拉克萨的暮刃
+item.serrated_dirk.name=锯齿短匕
+
 
 # 物品
 item.coin_10.name=10金币
@@ -19,4 +23,10 @@ item.coin_500.name=500金币
 item.coin_1000.name=1000金币
 item.ruby_crystal.name=红水晶
 item.kindlegem.name=燃烧宝石
+
+# 盾牌
 item.ageis_of_the_legion.name=军团圣盾
+
+# 防具
+item.cloth_armor.name=布甲
+item.null_magic_mantle.name=抗魔斗篷

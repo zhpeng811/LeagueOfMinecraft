@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import net.minecraft.item.Item;
 
 public class Shields {
-	public static ArrayList<Item> shields = new ArrayList<>();
+	public static final ArrayList<Item> SHIELDS = new ArrayList<>();
 	
 	public static void addAllShields() {
 		addShield("ageis_of_the_legion");
@@ -13,6 +13,6 @@ public class Shields {
 	
 	private static void addShield(String name) {
 		Item shield = new CustomShield(name);
-		shields.add(shield);
+		SHIELDS.add(shield);
 	}
 }
