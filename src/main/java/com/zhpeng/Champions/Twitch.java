@@ -1,6 +1,5 @@
 package com.zhpeng.Champions;
 
-import java.util.ArrayList;
 import java.util.List;
 
 import net.minecraft.client.util.ITooltipFlag;
@@ -9,7 +8,6 @@ import net.minecraft.init.Items;
 import net.minecraft.init.MobEffects;
 import net.minecraft.init.PotionTypes;
 import net.minecraft.item.ItemStack;
-import net.minecraft.potion.PotionEffect;
 import net.minecraft.potion.PotionType;
 import net.minecraft.potion.PotionUtils;
 import net.minecraft.util.EnumHand;
