@@ -1,10 +1,12 @@
 package com.zhpeng.proxy;
 
 import com.zhpeng.Armors.Armors;
+import com.zhpeng.Champions.ChampionBase;
+import com.zhpeng.Champions.Champions;
 import com.zhpeng.Items.Items;
 import com.zhpeng.Shields.Shields;
 import com.zhpeng.Weapons.Weapons;
-import com.zhpeng.util.Config;
+import com.zhpeng.util.Constants;
 
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.item.Item;
@@ -18,11 +20,11 @@ import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.registries.IForgeRegistry;
 
-@EventBusSubscriber(modid = Config.MODID, value = {Side.CLIENT})
+@EventBusSubscriber(modid = Constants.MODID, value = {Side.CLIENT})
 public class ClientProxy extends Proxy{
 	@EventHandler
 	public void preInit() {
-	    OBJLoader.INSTANCE.addDomain(Config.MODID);
+	    OBJLoader.INSTANCE.addDomain(Constants.MODID);
 	}
 	
 	@SubscribeEvent
@@ -38,6 +40,12 @@ public class ClientProxy extends Proxy{
 		}
 		for (Item armor : Armors.ARMORS) {
 			registerRender(armor);
+		}
+		for (ChampionBase champion : Champions.CHAMPIONS) {
+			registerRender((Item) champion);
+			for (Item ability : champion.ABILITIES) {
+				registerRender(ability);
+			}
 		}
 	}
 	
@@ -59,6 +67,12 @@ public class ClientProxy extends Proxy{
 		}
 		for (Item armor : Armors.ARMORS) {
 			registry.registerAll(armor);
+		}
+		for (ChampionBase champion : Champions.CHAMPIONS) {
+			registry.registerAll((Item) champion);
+			for (Item ability : champion.ABILITIES) {
+				registry.registerAll(ability);
+			}
 		}
 	}
 }

@@ -12,6 +12,6 @@ public class MLCreativeTabItems extends CreativeTabs {
 
 	@Override
 	public ItemStack getTabIconItem() {
-		return new ItemStack(Items.RUBY_CRYSTAL);
+		return new ItemStack(Items.KINDLEGEM);
 	}
 }

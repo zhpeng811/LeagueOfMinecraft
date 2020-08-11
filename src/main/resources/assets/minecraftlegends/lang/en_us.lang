@@ -3,7 +3,7 @@ itemGroup.minecraftlegends_weapons=Minecraft Legends: Weapons
 itemGroup.minecraftlegends_items=Minecraft Legends: Items
 itemGroup.minecraftlegends_shields=Minecraft Legends: Shields
 itemGroup.minecraftlegends_armors=Minecraft Legends: Armors
-
+itemGroup.minecraftlegends_champions=Minecraft Legends: Champions
 
 # swords
 item.death_dance.name=Death Dance
@@ -24,9 +24,43 @@ item.coin_1000.name=1000 Coins
 item.ruby_crystal.name=Ruby Crystal
 item.kindlegem.name=Kindlegem
 
-# 盾牌
+# Shield
 item.ageis_of_the_legion.name=Aegis of the Legion
 
-# 防具
+# Armor
 item.cloth_armor.name=Cloth Armor
 item.null_magic_mantle.name=Null-Magic Mantle
+item.adaptive_helm.name=Adaptive Helm
+item.spectre_cowl.name=Spectre's Cowl
+
+# General Tooltip on all champions
+item.champion.tooltip=Right Click to obtain the abilities for this champion
+
+# Champions
+item.udyr.name=The Spirit Walker - Udyr
+item.tiger_stance.name=Tiger Stance
+item.tiger_stance.tooltip=§bRight Click to gain 5 seconds of Haste II buff
+item.turtle_stance.name=Turtle Stance
+item.turtle_stance.tooltip=§bRight Click to gain 5 seconds of Absorption II buff
+item.bear_stance.name=Bear Stance
+item.bear_stance.tooltip=§bRight Click to gain 5 seconds of Speed II buff
+item.phoenix_stance.name=Phoenix Stance
+item.phoenix_stance.tooltip=§bRight Click to gain 5 seconds of Strength I buff
+
+item.twitch.name=The Plague Rat - Twitch
+item.ambush.name=Ambush
+item.ambush.tooltip=§bRight Click to gain 8 seconds of Invisibility buff
+item.venom_cask.name=Venom Cask
+item.venom_cask.tooltip=§bRight Click to obtain a splash potion of strong poison
+item.contaminate.name=Contaminate
+item.contaminate.tooltip=§bRight Click to obtain 8 strong poison arrow
+item.spray_and_pray.name=Spray and Pray
+item.spray_and_pray.tooltip=
+
+# cooldown tooltip
+tooltip.15_seconds_cooldown=§c15 Seconds Cooldown
+tooltip.25_seconds_cooldown=§c25 Seconds Cooldown
+tooltip.30_seconds_cooldown=§c30 Seconds Cooldown
+
+# messages
+message.already_obtained=You still have the item for this ability, please use the item first before activating this ability again

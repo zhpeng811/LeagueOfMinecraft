@@ -1,10 +1,10 @@
 package com.zhpeng.proxy;
 
-import com.zhpeng.util.Config;
+import com.zhpeng.util.Constants;
 
 import net.minecraftforge.fml.common.Mod.EventBusSubscriber;
 
-@EventBusSubscriber(modid = Config.MODID)
+@EventBusSubscriber(modid = Constants.MODID)
 public class Proxy {
 	 public void preInit() {}
 	  
