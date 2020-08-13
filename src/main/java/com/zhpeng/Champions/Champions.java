@@ -9,5 +9,7 @@ public class Champions {
 	public static void addAllChampions() {
 		CHAMPIONS.add(new Udyr());
 		CHAMPIONS.add(new Twitch());
+		CHAMPIONS.add(new Sona());
+		CHAMPIONS.add(new Zilean());
 	}
 }

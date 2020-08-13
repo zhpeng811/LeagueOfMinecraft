@@ -14,6 +14,8 @@ item.caulfield_warhammer.name=考尔菲德的战锤
 item.phage.name=净蚀
 item.duskblade_of_draktharr.name=德拉克萨的暮刃
 item.serrated_dirk.name=锯齿短匕
+item.infinity_edge.name=无尽之刃
+item.bf_sword.name=暴风大剑
 
 
 # 物品
@@ -24,6 +26,7 @@ item.coin_500.name=500金币
 item.coin_1000.name=1000金币
 item.ruby_crystal.name=红水晶
 item.kindlegem.name=燃烧宝石
+item.rejuvenation_bead.name=治疗宝珠
 
 # 盾牌
 item.ageis_of_the_legion.name=军团圣盾
@@ -55,13 +58,36 @@ item.venom_cask.name=剧毒之桶
 item.venom_cask.tooltip=§b右键获得一瓶剧毒II可投掷药水
 item.contaminate.name=毒性爆发
 item.contaminate.tooltip=§b右键获得8只剧毒箭
-item.spray_and_pray.name=Spray and Pray
-item.spray_and_pray.tooltip=
+item.spray_and_pray.name=火力全开
+item.spray_and_pray.tooltip=§b右键获得20秒的力量II效果
+
+item.sona.name=琴瑟仙女 - 娑娜
+item.hymn_of_valor.name=英勇赞美诗
+item.hymn_of_valor.tooltip=§b右键获得一瓶伤害I可投掷药水
+item.aria_of_perseverance.name=坚毅咏叹调
+item.aria_of_perseverance.tooltip=§b右键获得一瓶瞬间治疗II可投掷药水
+item.song_of_celerity.name=迅捷奏鸣曲
+item.song_of_celerity.tooltip=§b右键获得一瓶速度II可投掷药水
+item.crescendo.name=狂舞终乐章
+item.crescendo.tooltip=§b右键获得一瓶瞬间伤害II,虚弱V,缓慢V可投掷药水
+
+item.zilean.name=时光守护者 - 基兰
+item.time_bomb.name=定时炸弹
+item.time_bomb.tooltip=
+item.rewind.name=穿梭未来
+item.rewind.tooltip=
+item.time_wrap.name=时光发条
+item.time_wrap.tooltip=
+item.chronoshift.name=时光倒流
+item.chronoshift.tooltip=
 
 # 冷却时间描述
 tooltip.15_seconds_cooldown=§c15秒冷却时间
+tooltip.20_seconds_cooldown=§c20秒冷却时间
 tooltip.25_seconds_cooldown=§c25秒冷却时间
 tooltip.30_seconds_cooldown=§c30秒冷却时间
+tooltip.100_seconds_cooldown=§c100秒冷却时间
+tooltip.100_seconds_cooldown=§c120秒冷却时间
 
 # 消息
 message.already_obtained=你的物品栏中还有此技能的物品,再次使用该技能前请先使用该物品

@@ -1,32 +1,37 @@
-package com.zhpeng.proxy;
+package com.zhpeng.Proxy;
 
 import com.zhpeng.Armors.Armors;
 import com.zhpeng.Champions.ChampionBase;
 import com.zhpeng.Champions.Champions;
+import com.zhpeng.Events.TNTExplosionEvent;
 import com.zhpeng.Items.Items;
 import com.zhpeng.Shields.Shields;
+import com.zhpeng.Util.Constants;
 import com.zhpeng.Weapons.Weapons;
-import com.zhpeng.util.Constants;
 
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.item.Item;
 import net.minecraftforge.client.event.ModelRegistryEvent;
 import net.minecraftforge.client.model.ModelLoader;
 import net.minecraftforge.client.model.obj.OBJLoader;
+import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.fml.common.Mod.EventBusSubscriber;
-import net.minecraftforge.fml.common.Mod.EventHandler;
+import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.registries.IForgeRegistry;
 
-@EventBusSubscriber(modid = Constants.MODID, value = {Side.CLIENT})
-public class ClientProxy extends Proxy{
-	@EventHandler
-	public void preInit() {
-	    OBJLoader.INSTANCE.addDomain(Constants.MODID);
+@EventBusSubscriber(modid = Constants.MODID, value = { Side.CLIENT })
+public class ClientProxy extends Proxy {
+	public void preInit(FMLPreInitializationEvent event) {
+		OBJLoader.INSTANCE.addDomain(Constants.MODID);
 	}
-	
+
+	public void init(FMLPreInitializationEvent event) {
+		MinecraftForge.EVENT_BUS.register(new TNTExplosionEvent());
+	}
+
 	@SubscribeEvent
 	public static void registerRenders(ModelRegistryEvent event) {
 		for (Item weapon : Weapons.WEAPONS) {
@@ -48,13 +53,17 @@ public class ClientProxy extends Proxy{
 			}
 		}
 	}
-	
+
 	public static void registerRender(Item item) {
-		ModelLoader.setCustomModelResourceLocation(item, 0, new ModelResourceLocation( item.getRegistryName(), "inventory"));
+		ModelLoader.setCustomModelResourceLocation(
+				item, 
+				0,
+				new ModelResourceLocation(item.getRegistryName(), "inventory")
+		);
 	}
-	
+
 	@SubscribeEvent
-    public static void registerItems(RegistryEvent.Register<Item> event) {
+	public static void registerItems(RegistryEvent.Register<Item> event) {
 		IForgeRegistry<Item> registry = event.getRegistry();
 		for (Item weapon : Weapons.WEAPONS) {
 			registry.registerAll(weapon);

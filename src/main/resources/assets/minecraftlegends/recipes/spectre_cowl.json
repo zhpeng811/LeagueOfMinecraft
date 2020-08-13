@@ -1,0 +1,27 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	 "ingredients": [
+        {
+            "item": "minecraftlegends:ruby_crystal"
+        },
+		{
+            "item": "minecraftlegends:null_magic_mantle"
+        },
+		{
+			"item": "minecraftlegends:coin_100"
+		},
+		{
+			"item": "minecraftlegends:coin_100"
+		},
+		{
+			"item": "minecraftlegends:coin_100"
+		},
+		{
+			"item": "minecraftlegends:coin_50"
+		}
+    ],
+	"result": {
+		"item": "minecraftlegends:spectre_cowl"
+	}
+	
+}

@@ -1,6 +1,9 @@
 package com.zhpeng.Champions;
 
+import java.util.ArrayList;
 import java.util.List;
+
+import com.zhpeng.Util.Constants;
 
 import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.entity.player.EntityPlayer;
@@ -8,7 +11,7 @@ import net.minecraft.init.Items;
 import net.minecraft.init.MobEffects;
 import net.minecraft.init.PotionTypes;
 import net.minecraft.item.ItemStack;
-import net.minecraft.potion.PotionType;
+import net.minecraft.potion.PotionEffect;
 import net.minecraft.potion.PotionUtils;
 import net.minecraft.util.EnumHand;
 import net.minecraft.util.text.TextComponentString;
@@ -44,7 +47,7 @@ class VenomCask extends AbilityBase {
 	protected void rightClickAction(World worldIn, EntityPlayer playerIn, EnumHand handIn) {    
         ItemStack poisonPotion = PotionUtils.addPotionToItemStack(new ItemStack(Items.SPLASH_POTION), PotionTypes.STRONG_POISON);
 
-        if (checkForItemInInventory(poisonPotion.getItem(), playerIn.inventory)) {
+        if (checkForItemInInventory(poisonPotion, playerIn.inventory)) {
         	playerIn.sendMessage(new TextComponentString(I18n.translateToLocal("message.already_obtained")));
         } else {
         	playerIn.inventory.addItemStackToInventory(poisonPotion); 
@@ -66,13 +69,16 @@ class Contaminate extends AbilityBase {
 	}
 	
 	protected void rightClickAction(World worldIn, EntityPlayer playerIn, EnumHand handIn) {    
-		ItemStack poisonArrow = PotionUtils.addPotionToItemStack(
-        		new ItemStack(Items.TIPPED_ARROW, 8), 
-        		PotionType.getPotionTypeForName("strong_poison")
-        );
-
-				
-        if (checkForItemAmountInInventory(poisonArrow.getItem(), playerIn.inventory, 8)) {
+//		ItemStack poisonArrow = PotionUtils.addPotionToItemStack(
+//        		new ItemStack(Items.TIPPED_ARROW, 8), 
+//        		PotionType.getPotionTypeForName("strong_poison")
+//        );
+		ItemStack tippedArrow = new ItemStack(Items.TIPPED_ARROW, 8);
+		ArrayList<PotionEffect> effects = new ArrayList<>();
+		effects.add(new PotionEffect(MobEffects.POISON, 10 * Constants.ticksPerSecond , 0));
+		ItemStack poisonArrow = PotionUtils.appendEffects(tippedArrow, effects);
+		
+        if (checkForItemAmountInInventory(poisonArrow, playerIn.inventory, 8)) {
         	playerIn.sendMessage(new TextComponentString(I18n.translateToLocal("message.already_obtained")));
         } else {
         	playerIn.inventory.clearMatchingItems(poisonArrow.getItem(), -1, -1, null);
@@ -88,6 +94,24 @@ class Contaminate extends AbilityBase {
 	}
 }
 
+class SprayAndPray extends AbilityBase {
+	
+	public SprayAndPray() {
+		super("spray_and_pray");
+	}
+	
+	protected void rightClickAction(World worldIn, EntityPlayer playerIn, EnumHand handIn) {    
+		addPotionEffect(playerIn, MobEffects.STRENGTH, 20, 1);
+        addItemCooldown(playerIn, 100);
+    }
+	
+	@SideOnly(Side.CLIENT)
+	public void addInformation(ItemStack stack, World world, List<String> tooltip, ITooltipFlag flagIn) {
+		tooltip.add(I18n.translateToLocal("item.spray_and_pray.tooltip"));
+		tooltip.add(I18n.translateToLocal("tooltip.100_seconds_cooldown"));
+	}
+}
+
 public class Twitch extends ChampionBase {
 
 	public Twitch() {
@@ -95,6 +119,7 @@ public class Twitch extends ChampionBase {
 		ABILITIES.add(new Ambush());
 		ABILITIES.add(new VenomCask());
 		ABILITIES.add(new Contaminate());
+		ABILITIES.add(new SprayAndPray());
 	}
 
 }

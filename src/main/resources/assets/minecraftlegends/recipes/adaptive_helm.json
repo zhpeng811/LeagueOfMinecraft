@@ -1,0 +1,21 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	 "ingredients": [
+        {
+            "item": "minecraftlegends:null_magic_mantle"
+        },
+		{
+            "item": "minecraftlegends:spectre_cowl"
+        },
+		{
+			"item": "minecraftlegends:rejuvenation_bead"
+		},
+		{	
+			"item": "minecraftlegends:coin_1000"
+		}
+    ],
+	"result": {
+		"item": "minecraftlegends:adaptive_helm"
+	}
+	
+}

@@ -13,7 +13,9 @@ public class Items {
 	public static final Item COIN_500 = (Item) new ItemsBase("coin_500");
 	public static final Item COIN_1000 = (Item) new ItemsBase("coin_1000");
 	
+	public static final Item REJUVENATION_BEAD = (Item) new ItemsBase("rejuvenation_bead");
 	public static final Item RUBY_CRYSTAL = (Item) new ItemsBase("ruby_crystal");
 	public static final Item KINDLEGEM = (Item) new ItemsBase("kindlegem");
 	
 }
+ 

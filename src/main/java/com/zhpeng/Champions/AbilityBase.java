@@ -4,7 +4,7 @@ import java.util.List;
 
 import javax.annotation.Nullable;
 
-import com.zhpeng.util.Constants;
+import com.zhpeng.Util.Constants;
 
 import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.entity.player.EntityPlayer;
@@ -39,17 +39,20 @@ public abstract class AbilityBase extends Item {
 	
 	protected abstract void rightClickAction(World worldIn, EntityPlayer playerIn, EnumHand handIn);
 	
-	protected boolean checkForItemInInventory(Item item, InventoryPlayer inventory) {
-		return checkForItemAmountInInventory(item, inventory, 1);
+	protected boolean checkForItemInInventory(ItemStack stack, InventoryPlayer inventory) {
+		return checkForItemAmountInInventory(stack, inventory, 1);
 	}
 	
 	/** 
 	 * check if the player's inventory has at least {amount} stacks of item
 	 */
-	protected boolean checkForItemAmountInInventory(Item item, InventoryPlayer inventory, int amount) {
+	protected boolean checkForItemAmountInInventory(ItemStack stack, InventoryPlayer inventory, int amount) {
 		for (int i = 0; i < inventory.getSizeInventory(); i++) {
-        	ItemStack stack = inventory.getStackInSlot(i);
-        	if (stack.getItem().equals(item)) {
+        	ItemStack inventoryStack = inventory.getStackInSlot(i);
+        	if (
+        			stack.getItem().equals(inventoryStack.getItem()) &&
+        			ItemStack.areItemStackTagsEqual(stack, inventoryStack)
+        	) {
         		if (stack.getCount() >= amount) {
         			return true;        			
         		}
