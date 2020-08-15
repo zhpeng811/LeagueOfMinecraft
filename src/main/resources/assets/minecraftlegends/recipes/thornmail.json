@@ -1,0 +1,21 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	 "ingredients": [
+        {
+            "item": "minecraftlegends:bramble_vest"
+        },
+		{
+            "item": "minecraftlegends:ruby_crystal"
+        },
+		{
+			"item": "minecraftlegends:warden_mail"
+		},
+		{	
+			"item": "minecraftlegends:coin_500"
+		}
+    ],
+	"result": {
+		"item": "minecraftlegends:thornmail"
+	}
+	
+}

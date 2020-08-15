@@ -69,13 +69,9 @@ class Contaminate extends AbilityBase {
 	}
 	
 	protected void rightClickAction(World worldIn, EntityPlayer playerIn, EnumHand handIn) {    
-//		ItemStack poisonArrow = PotionUtils.addPotionToItemStack(
-//        		new ItemStack(Items.TIPPED_ARROW, 8), 
-//        		PotionType.getPotionTypeForName("strong_poison")
-//        );
 		ItemStack tippedArrow = new ItemStack(Items.TIPPED_ARROW, 8);
 		ArrayList<PotionEffect> effects = new ArrayList<>();
-		effects.add(new PotionEffect(MobEffects.POISON, 10 * Constants.ticksPerSecond , 0));
+		effects.add(new PotionEffect(MobEffects.POISON, 10 * Constants.ticksPerSecond , 1));
 		ItemStack poisonArrow = PotionUtils.appendEffects(tippedArrow, effects);
 		
         if (checkForItemAmountInInventory(poisonArrow, playerIn.inventory, 8)) {

@@ -16,6 +16,10 @@ item.duskblade_of_draktharr.name=Duskblade of Draktharr
 item.serrated_dirk.name=Serrated Dirk
 item.infinity_edge.name=Infinity Edge
 item.bf_sword.name=B. F. Sword
+item.pickaxe.name=Pickaxe
+item.cloak_of_agility.name=Cloak of Agility
+item.bloodthirster.name=Bloodthirster
+item.ravenous_hydra.name=Ravenous Hydra
 
 # items
 item.coin_10.name=10 Coins
@@ -35,6 +39,10 @@ item.cloth_armor.name=Cloth Armor
 item.null_magic_mantle.name=Null-Magic Mantle
 item.adaptive_helm.name=Adaptive Helm
 item.spectre_cowl.name=Spectre's Cowl
+item.spirit_visage.name=Spirit Visage
+item.thornmail.name=Thornmail
+item.bramble_vest.name=Bramble Vest
+item.warden_mail.name=Warden's Mail
 
 # General Tooltip on all champions
 item.champion.tooltip=Right Click to obtain the abilities for this champion
@@ -42,51 +50,67 @@ item.champion.tooltip=Right Click to obtain the abilities for this champion
 # Champions
 item.udyr.name=The Spirit Walker - Udyr
 item.tiger_stance.name=Tiger Stance
-item.tiger_stance.tooltip=§bRight Click to gain 5 seconds of Haste II buff
+item.tiger_stance.tooltip=§bGain 5 seconds of Haste II buff
 item.turtle_stance.name=Turtle Stance
-item.turtle_stance.tooltip=§bRight Click to gain 5 seconds of Absorption II buff
+item.turtle_stance.tooltip=§bGain 5 seconds of Absorption II buff
 item.bear_stance.name=Bear Stance
-item.bear_stance.tooltip=§bRight Click to gain 5 seconds of Speed II buff
+item.bear_stance.tooltip=§bGain 5 seconds of Speed II buff
 item.phoenix_stance.name=Phoenix Stance
-item.phoenix_stance.tooltip=§bRight Click to gain 5 seconds of Strength I buff
+item.phoenix_stance.tooltip=§bGain 5 seconds of Strength I buff
 
 item.twitch.name=The Plague Rat - Twitch
 item.ambush.name=Ambush
-item.ambush.tooltip=§bRight Click to gain 8 seconds of Invisibility buff
+item.ambush.tooltip=§bGain 8 seconds of Invisibility buff
 item.venom_cask.name=Venom Cask
-item.venom_cask.tooltip=§bRight Click to obtain a splash potion of strong poison
+item.venom_cask.tooltip=§bObtain a splash potion of strong poison
 item.contaminate.name=Contaminate
-item.contaminate.tooltip=§bRight Click to obtain 8 strong poison arrow
+item.contaminate.tooltip=§bObtain 8 strong poison arrow
 item.spray_and_pray.name=Spray and Pray
-item.spray_and_pray.tooltip=§bRight Click to gain 20 seconds of Strength II buff
+item.spray_and_pray.tooltip=§bGain 20 seconds of Strength II buff
 
 item.sona.name=Maven of The Strings - Sona
 item.hymn_of_valor.name=Hymn of Valor
-item.hymn_of_valor.tooltip=§bRight Click to obtain a splash potion of harming
+item.hymn_of_valor.tooltip=§bObtain a splash potion of harming
 item.aria_of_perseverance.name=Aria of Perseverance
-item.aria_of_perseverance.tooltip=§bRight Click to obtain a splash potion of strong healing
+item.aria_of_perseverance.tooltip=§bObtain a splash potion of strong healing
 item.song_of_celerity.name=Song of Celerity
-item.song_of_celerity.tooltip=§bRight Click to obtain a splash potion of strong swiftness
+item.song_of_celerity.tooltip=§bObtain a splash potion of strong swiftness
 item.crescendo.name=Crescendo
-item.crescendo.tooltip=§bRight Click to obtain a splash potion instant damage II, weakness V, slowness V
+item.crescendo.tooltip=§bObtain a splash potion of instant damage II, weakness V, slowness V
 
 item.zilean.name=The Chronokeeper - Zilean
 item.time_bomb.name=Time Bomb
-item.time_bomb.tooltip=
+item.time_bomb.tooltip=§bThrows a TNT bomb that will begin explode upon landing, this bomb will not destroy blocks
 item.rewind.name=Rewind
-item.rewind.tooltip=
+item.rewind.tooltip=§bReset the cooldown time of §aTime Bomb §band §aTime Wrap
 item.time_wrap.name=Time Wrap
-item.time_wrap.tooltip=
+item.time_wrap.tooltip=§bGain 5 seconds of Speed II buff
 item.chronoshift.name=Chronoshift
-item.chronoshift.tooltip=
+item.chronoshift.tooltip=§bObtain a Totem of Undying
+
+item.teemo.name=The Swift Scount - Teemo
+item.blinding_dart.name=Blinding Dart
+item.blinding_dart.tooltip=§bObtain a splash potion of strong blindness
+item.move_quick.name=Move Quick
+item.move_quick.tooltip=§bGain 5 seconds of Speed II buff
+item.toxic_shot.name=Toxic Shot
+item.toxic_shot.tooltip=§bObtain 8 strong poison arrow
+item.noxious_trap.name=Noxious Trap
+item.noxious_trap.tooltip=§bObtain a splash potion of poison V, slowness V
 
 # cooldown tooltip
+tooltip.10_seconds_cooldown=§c10 Seconds Cooldown
 tooltip.15_seconds_cooldown=§c15 Seconds Cooldown
 tooltip.20_seconds_cooldown=§c20 Seconds Cooldown
 tooltip.25_seconds_cooldown=§c25 Seconds Cooldown
 tooltip.30_seconds_cooldown=§c30 Seconds Cooldown
+tooltip.40_seconds_cooldown=§c40 Seconds Cooldown
 tooltip.100_seconds_cooldown=§c100 Seconds Cooldown
-tooltip.100_seconds_cooldown=§c120 Seconds Cooldown
+tooltip.120_seconds_cooldown=§c120 Seconds Cooldown
+
+# armor health tooltip
+item.spectre_cowl.tooltip=§6+10 maximum health
+item.adaptive_helm.tooltip=§6+14 maximum health
 
 # messages
 message.already_obtained=You still have the item for this ability, please use the item first before activating this ability again

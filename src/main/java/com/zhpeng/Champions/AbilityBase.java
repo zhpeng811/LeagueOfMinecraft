@@ -32,6 +32,10 @@ public abstract class AbilityBase extends Item {
 		playerIn.addPotionEffect(new PotionEffect(potionType, duration * ticksPerSecond, amplifier));
 	}
 	
+	protected void removeItemCooldown(EntityPlayer playerIn, Item item) {
+		playerIn.getCooldownTracker().removeCooldown(item);
+	}
+	
 	protected void addItemCooldown(EntityPlayer playerIn, int cooldownTime) {
 		int ticksPerSecond = Constants.ticksPerSecond;
 		playerIn.getCooldownTracker().setCooldown(this, cooldownTime * ticksPerSecond);

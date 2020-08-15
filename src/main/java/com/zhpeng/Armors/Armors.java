@@ -16,48 +16,104 @@ public class Armors {
 	
 	public static void addAllArmors() {
 		float armorRatio = Constants.armorRatio;
-		float toughnessRatio = Constants.toughnessRatio;
+		float unfinishedArmorToughness = Constants.unfinishedArmorToughness;
+		float finishedArmorToughness = Constants.finishedArmorToughness;
+		float healthRatio = Constants.healthRatio;
+		int armorDurability = Constants.armorDurability;
+		int unfinishedItemEnchantability = Constants.unfinishedItemEnchantability;
+		int finishedItemEnchantability = Constants.finishedItemEnchantability;
 		
+		// unfinished armor
 		addArmor(
 				"cloth_armor", 
 				"minecraftlegends:cloth_armor", 
-				300, 
-				new int[]{ 0, 0, (int) (15 * armorRatio), 0 }, 
-				0, 
-				0.0F * toughnessRatio, 
+				armorDurability, 
+				new int[] { 0, 0, (int) (15 * armorRatio), 0 }, 
+				unfinishedItemEnchantability, 
+				unfinishedArmorToughness, 
 				SoundEvents.ITEM_ARMOR_EQUIP_LEATHER, 
-				EntityEquipmentSlot.CHEST
+				EntityEquipmentSlot.CHEST,
+				0F * healthRatio
 		);
 		addArmor(
 				"null_magic_mantle",
 				"minecraftlegends:null_magic_mantle",
-				450,
-				new int[]{ 0, (int) (25 * armorRatio), 0, 0 },
-				0,
-				0.0F * toughnessRatio,
+				armorDurability,
+				new int[] { 0, (int) (25 * armorRatio), 0, 0 },
+				unfinishedItemEnchantability,
+				unfinishedArmorToughness,
 				SoundEvents.ITEM_ARMOR_EQUIP_LEATHER, 
-				EntityEquipmentSlot.LEGS
+				EntityEquipmentSlot.LEGS,
+				0F * healthRatio
 		);
 		addArmor(
 				"spectre_cowl", 
 				"minecraftlegends:spectre_cowl", 
-				1200, 
-				new int[]{ 0, 0, 0, (int) (25 * armorRatio) }, 
-				0, 
-				250F * toughnessRatio, 
+				armorDurability, 
+				new int[] { 0, 0, 0, (int) (25 * armorRatio) }, 
+				unfinishedItemEnchantability, 
+				unfinishedArmorToughness, 
 				SoundEvents.ITEM_ARMOR_EQUIP_IRON, 
-				EntityEquipmentSlot.HEAD
+				EntityEquipmentSlot.HEAD,
+				250F * healthRatio
 		);
+		addArmor(
+				"bramble_vest", 
+				"minecraftlegends:bramble_vest", 
+				armorDurability, 
+				new int[] { 0, 0, (int) (35 * armorRatio), 0}, 
+				unfinishedItemEnchantability, 
+				unfinishedArmorToughness, 
+				SoundEvents.ITEM_ARMOR_EQUIP_IRON, 
+				EntityEquipmentSlot.CHEST,
+				0F * healthRatio
+		);
+		addArmor(
+				"warden_mail", 
+				"minecraftlegends:warden_mail", 
+				armorDurability, 
+				new int[] { 0, 0, (int) (40 * armorRatio), 0}, 
+				unfinishedItemEnchantability, 
+				unfinishedArmorToughness, 
+				SoundEvents.ITEM_ARMOR_EQUIP_IRON, 
+				EntityEquipmentSlot.CHEST,
+				0F * healthRatio
+		);
+		
+		// finished armor
 		addArmor(
 				"adaptive_helm",
 				"minecraftlegends:adaptive_helm",
-				2800,
-				new int[]{ 0, 0, 0, (int) (55 * armorRatio) },
-				0,
-				350F * toughnessRatio,
+				armorDurability,
+				new int[] { 0, 0, 0, (int) (55 * armorRatio) },
+				finishedItemEnchantability,
+				finishedArmorToughness,
 				SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 
-				EntityEquipmentSlot.HEAD
+				EntityEquipmentSlot.HEAD,
+				350F * healthRatio
 		);	
+		addArmor(
+				"spirit_visage",
+				"minecraftlegends:spirit_visage",
+				armorDurability,
+				new int[] { 0, 0, (int) (55 * armorRatio) },
+				finishedItemEnchantability,
+				finishedArmorToughness,
+				SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND,
+				EntityEquipmentSlot.CHEST,
+				450F * healthRatio
+		);
+		addArmor(
+				"thornmail",
+				"minecraftlegends:thornmail",
+				armorDurability,
+				new int[] { 0, 0, (int) (80 * armorRatio) },
+				finishedItemEnchantability,
+				finishedArmorToughness,
+				SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND,
+				EntityEquipmentSlot.CHEST,
+				250F * healthRatio
+		);
 	}
 	
 	/** 
@@ -81,7 +137,8 @@ public class Armors {
 		int enchantability,
 		float toughness,
 		SoundEvent soundOnEquip,
-		EntityEquipmentSlot equipmentSlotIn
+		EntityEquipmentSlot equipmentSlotIn,
+		float addedMaxHealth
 	) {
 		ArmorMaterial material = EnumHelper.addArmorMaterial(
 				name, 
@@ -92,7 +149,7 @@ public class Armors {
 				soundOnEquip, 
 				toughness
 		);
-		Item armor = new CustomArmor(material, 1, equipmentSlotIn, name);
+		Item armor = new CustomArmor(material, 1, equipmentSlotIn, name, addedMaxHealth);
 		ARMORS.add(armor);
 	}
 }

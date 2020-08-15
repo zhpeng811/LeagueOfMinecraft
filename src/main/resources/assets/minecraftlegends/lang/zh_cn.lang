@@ -16,7 +16,10 @@ item.duskblade_of_draktharr.name=德拉克萨的暮刃
 item.serrated_dirk.name=锯齿短匕
 item.infinity_edge.name=无尽之刃
 item.bf_sword.name=暴风大剑
-
+item.pickaxe.name=十字镐
+item.cloak_of_agility.name=灵巧披风
+item.bloodthirster.name=饮血剑
+item.ravenous_hydra.name=贪欲九头蛇
 
 # 物品
 item.coin_10.name=10金币
@@ -36,6 +39,10 @@ item.cloth_armor.name=布甲
 item.null_magic_mantle.name=抗魔斗篷
 item.adaptive_helm.name=适应性头盔
 item.spectre_cowl.name=幽魂斗篷
+item.spirit_visage.name=振奋铠甲
+item.thornmail.name=荆棘之甲
+item.bramble_vest.name=棘刺背心
+item.warden_mail.name=守望者铠甲
 
 # 英雄图标通用物品描述
 item.champion.tooltip=右键获得该英雄的技能
@@ -43,51 +50,67 @@ item.champion.tooltip=右键获得该英雄的技能
 # 英雄
 item.udyr.name=兽灵行者 - 乌迪尔
 item.tiger_stance.name=猛虎姿态
-item.tiger_stance.tooltip=§b右键获得5秒的急迫II效果
+item.tiger_stance.tooltip=§b获得5秒的急迫II效果
 item.turtle_stance.name=灵龟姿态
-item.turtle_stance.tooltip=§b右键获得5秒的伤害吸收II效果
+item.turtle_stance.tooltip=§b获得5秒的伤害吸收II效果
 item.bear_stance.name=巨熊姿态
-item.bear_stance.tooltip=§b右键获得5秒的速度II效果
+item.bear_stance.tooltip=§b获得5秒的速度II效果
 item.phoenix_stance.name=火凤姿态
-item.phoenix_stance.tooltip=§b右键获得5秒的力量I效果
+item.phoenix_stance.tooltip=§b获得5秒的力量I效果
 
 item.twitch.name=瘟疫之源 - 图奇
 item.ambush.name=埋伏
-item.ambush.tooltip=§b右键获得8秒的隐身效果
+item.ambush.tooltip=§b获得8秒的隐身效果
 item.venom_cask.name=剧毒之桶
-item.venom_cask.tooltip=§b右键获得一瓶剧毒II可投掷药水
+item.venom_cask.tooltip=§b获得一瓶剧毒II可投掷药水
 item.contaminate.name=毒性爆发
-item.contaminate.tooltip=§b右键获得8只剧毒箭
+item.contaminate.tooltip=§b获得8只剧毒箭
 item.spray_and_pray.name=火力全开
-item.spray_and_pray.tooltip=§b右键获得20秒的力量II效果
+item.spray_and_pray.tooltip=§b获得20秒的力量II效果
 
 item.sona.name=琴瑟仙女 - 娑娜
 item.hymn_of_valor.name=英勇赞美诗
-item.hymn_of_valor.tooltip=§b右键获得一瓶伤害I可投掷药水
+item.hymn_of_valor.tooltip=§b获得一瓶伤害I可投掷药水
 item.aria_of_perseverance.name=坚毅咏叹调
-item.aria_of_perseverance.tooltip=§b右键获得一瓶瞬间治疗II可投掷药水
+item.aria_of_perseverance.tooltip=§b获得一瓶瞬间治疗II可投掷药水
 item.song_of_celerity.name=迅捷奏鸣曲
-item.song_of_celerity.tooltip=§b右键获得一瓶速度II可投掷药水
+item.song_of_celerity.tooltip=§b获得一瓶速度II可投掷药水
 item.crescendo.name=狂舞终乐章
-item.crescendo.tooltip=§b右键获得一瓶瞬间伤害II,虚弱V,缓慢V可投掷药水
+item.crescendo.tooltip=§b获得一瓶瞬间伤害II,虚弱V,缓慢V可投掷药水
 
 item.zilean.name=时光守护者 - 基兰
 item.time_bomb.name=定时炸弹
-item.time_bomb.tooltip=
+item.time_bomb.tooltip=§b扔出一个有延迟的TNT炸弹,该炸弹不会破坏方块
 item.rewind.name=穿梭未来
-item.rewind.tooltip=
+item.rewind.tooltip=§b重置§a定时炸弹§b和§a时光发条§b的冷却时间
 item.time_wrap.name=时光发条
-item.time_wrap.tooltip=
+item.time_wrap.tooltip=§b获得5秒的速度II效果
 item.chronoshift.name=时光倒流
-item.chronoshift.tooltip=
+item.chronoshift.tooltip=§b获得一个不死图腾
+
+item.teemo.name=迅捷斥候 - 提莫
+item.blinding_dart.name=致盲吹箭
+item.blinding_dart.tooltip=§b获得一瓶致盲II药水
+item.move_quick.name=小莫快跑
+item.move_quick.tooltip=§b获得5秒的速度II效果
+item.toxic_shot.name=毒性射击
+item.toxic_shot.tooltip=§b获得8只剧毒箭
+item.noxious_trap.name=种蘑菇
+item.noxious_trap.tooltip=§b获得一瓶剧毒V,缓慢V可投掷药水
 
 # 冷却时间描述
+tooltip.10_seconds_cooldown=§c10秒冷却时间
 tooltip.15_seconds_cooldown=§c15秒冷却时间
 tooltip.20_seconds_cooldown=§c20秒冷却时间
 tooltip.25_seconds_cooldown=§c25秒冷却时间
 tooltip.30_seconds_cooldown=§c30秒冷却时间
+tooltip.40_seconds_cooldown=§c40秒冷却时间
 tooltip.100_seconds_cooldown=§c100秒冷却时间
-tooltip.100_seconds_cooldown=§c120秒冷却时间
+tooltip.120_seconds_cooldown=§c120秒冷却时间
+
+# 装备血量描述
+item.spectre_cowl.tooltip=§6+10最大生命值
+item.adaptive_helm.tooltip=§6+14最大生命值
 
 # 消息
 message.already_obtained=你的物品栏中还有此技能的物品,再次使用该技能前请先使用该物品

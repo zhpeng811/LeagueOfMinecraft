@@ -37,9 +37,9 @@ public class MinecraftLegends {
 	public static MLCreativeTabShields creativeTabShields = new MLCreativeTabShields();
 	public static MLCreativeTabArmors creativeTabArmors = new MLCreativeTabArmors();
 	public static MLCreativeTabChampions creativeTabChampions = new MLCreativeTabChampions();
-
+	
 	@EventHandler
-	public static void PreInit(FMLPreInitializationEvent event) {
+	public void PreInit(FMLPreInitializationEvent event) {
 		Weapons.addAllWeapons();
 		Shields.addAllShields();
 		Armors.addAllArmors();
@@ -48,7 +48,7 @@ public class MinecraftLegends {
 	}
 
 	@EventHandler
-	public static void init(FMLPreInitializationEvent event) {
+	public void init(FMLPreInitializationEvent event) {
 		proxy.init(event);
 	}
 }

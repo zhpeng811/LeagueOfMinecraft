@@ -17,5 +17,7 @@ public class Items {
 	public static final Item RUBY_CRYSTAL = (Item) new ItemsBase("ruby_crystal");
 	public static final Item KINDLEGEM = (Item) new ItemsBase("kindlegem");
 	
+	public static final Item CLOAK_OF_AGILITY = (Item) new ItemsBase("cloak_of_agility");
+	
 }
  

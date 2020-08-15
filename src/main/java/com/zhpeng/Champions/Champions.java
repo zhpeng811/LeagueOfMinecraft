@@ -11,5 +11,6 @@ public class Champions {
 		CHAMPIONS.add(new Twitch());
 		CHAMPIONS.add(new Sona());
 		CHAMPIONS.add(new Zilean());
+		CHAMPIONS.add(new Teemo());
 	}
 }

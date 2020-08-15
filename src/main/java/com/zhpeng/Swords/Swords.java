@@ -14,17 +14,26 @@ public class Swords {
 	public static void addAllWeapons() {
 		float damageRatio = Constants.damageRatio;
 		float swordBaseDamage = Constants.swordBaseDamage;
+		int durability = Constants.swordDurability;
+		int unfinishedItemEnchantability = Constants.unfinishedItemEnchantability;
+		int finishedItemEnchantability = Constants.finishedItemEnchantability;
 		
-		addWeapon("long_sword", 2, 350, 2.0F, 10 * damageRatio - swordBaseDamage, 30);
-		addWeapon("vampiric_scepter", 3, 900, 3.0F, 15 * damageRatio - swordBaseDamage, 30);
-		addWeapon("caulfield_warhammer", 3, 1100, 3.0F, 25 * damageRatio - swordBaseDamage, 30);
-		addWeapon("serrated_dirk", 3, 1100, 3.0F, 30 * damageRatio - swordBaseDamage, 30);
-		addWeapon("phage", 3, 1200, 3.0F, 15 * damageRatio - swordBaseDamage, 30);
-		addWeapon("bf_sword", 3, 1300, 3.0F, 40 * damageRatio - swordBaseDamage, 30);
-		addWeapon("death_dance", 4, 3600, 5.0F, 50 * damageRatio - swordBaseDamage, 30);
-		addWeapon("black_cleaver", 4, 3000, 5.0F, 40 * damageRatio - swordBaseDamage, 30);
-		addWeapon("duskblade_of_draktharr", 4, 2900, 5.0F, 60 * damageRatio - swordBaseDamage, 30);
-		addWeapon("infinity_edge", 4, 3400, 5.0F, 80 * damageRatio - swordBaseDamage, 30);
+		// starting and advanced items
+		addWeapon("long_sword", 2, durability, 2.0F, 10 * damageRatio - swordBaseDamage, unfinishedItemEnchantability);
+		addWeapon("vampiric_scepter", 3, durability, 3.0F, 15 * damageRatio - swordBaseDamage, unfinishedItemEnchantability);
+		addWeapon("caulfield_warhammer", 3, durability, 3.0F, 25 * damageRatio - swordBaseDamage, unfinishedItemEnchantability);
+		addWeapon("serrated_dirk", 3, durability, 3.0F, 30 * damageRatio - swordBaseDamage, unfinishedItemEnchantability);
+		addWeapon("phage", 3, durability, 3.0F, 15 * damageRatio - swordBaseDamage, unfinishedItemEnchantability);
+		addWeapon("bf_sword", 3, durability, 3.0F, 40 * damageRatio - swordBaseDamage, unfinishedItemEnchantability);
+		addWeapon("pickaxe", 3, durability, 3.0F, 25 * damageRatio - swordBaseDamage, unfinishedItemEnchantability);
+		
+		// finished items
+		addWeapon("death_dance", 4, -1, 5.0F, 50 * damageRatio - swordBaseDamage, finishedItemEnchantability);
+		addWeapon("black_cleaver", 4, -1, 5.0F, 40 * damageRatio - swordBaseDamage, finishedItemEnchantability);
+		addWeapon("duskblade_of_draktharr", 4, -1, 5.0F, 60 * damageRatio - swordBaseDamage, finishedItemEnchantability);
+		addWeapon("infinity_edge", 4, -1, 5.0F, 80 * damageRatio - swordBaseDamage, finishedItemEnchantability);
+		addWeapon("bloodthirster", 4, -1, 5.0F, 80 * damageRatio - swordBaseDamage, finishedItemEnchantability);
+		addWeapon("ravenous_hydra", 4, -1, 5.0F, 80 * damageRatio - swordBaseDamage, finishedItemEnchantability);
 	}
 	
 	private static void addWeapon(
