@@ -54,7 +54,7 @@ class BearStance extends AbilityBase {
     }
 	
 	protected void rightClickAction(World worldIn, EntityPlayer playerIn, EnumHand handIn) {
-		addPotionEffect(playerIn, MobEffects.SPEED, 5, 1);
+		addPotionEffect(playerIn, MobEffects.SPEED, 5, 3);
         addItemCooldown(playerIn, 15);
     }
     

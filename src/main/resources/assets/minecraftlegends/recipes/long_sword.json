@@ -1,0 +1,21 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	 "ingredients": [
+        {
+            "item": "minecraftlegends:coin_100"
+        },
+		{
+            "item": "minecraftlegends:coin_100"
+        },
+		{
+			"item": "minecraftlegends:coin_100"
+		},
+		{	
+			"item": "minecraftlegends:coin_50"
+		}
+    ],
+	"result": {
+		"item": "minecraftlegends:long_sword"
+	}
+	
+}

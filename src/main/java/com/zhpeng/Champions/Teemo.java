@@ -3,7 +3,7 @@ package com.zhpeng.Champions;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.zhpeng.Util.Constants;
+import com.zhpeng.Utils.Constants;
 
 import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.entity.player.EntityPlayer;
@@ -49,7 +49,7 @@ class MoveQuick extends AbilityBase {
 	}
 	
 	protected void rightClickAction(World worldIn, EntityPlayer playerIn, EnumHand handIn) {
-		addPotionEffect(playerIn, MobEffects.SPEED, 5, 1);
+		addPotionEffect(playerIn, MobEffects.SPEED, 5, 3);
 	    addItemCooldown(playerIn, 15);
 	}
 

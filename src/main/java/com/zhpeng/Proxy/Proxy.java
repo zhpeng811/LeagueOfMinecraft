@@ -1,6 +1,6 @@
 package com.zhpeng.Proxy;
 
-import com.zhpeng.Util.Constants;
+import com.zhpeng.Utils.Constants;
 
 import net.minecraftforge.fml.common.Mod.EventBusSubscriber;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;

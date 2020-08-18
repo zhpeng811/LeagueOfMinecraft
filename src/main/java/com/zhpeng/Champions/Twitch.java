@@ -3,7 +3,7 @@ package com.zhpeng.Champions;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.zhpeng.Util.Constants;
+import com.zhpeng.Utils.Constants;
 
 import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.entity.player.EntityPlayer;

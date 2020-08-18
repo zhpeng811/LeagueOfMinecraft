@@ -1,0 +1,30 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	 "ingredients": [
+        {
+            "item": "minecraftlegends:giant_belt"
+        },
+		{
+            "item": "minecraftlegends:kindlegem"
+        },
+		{
+			"item": "minecraftlegends:crystalline_bracer"
+		},
+		{	
+			"item": "minecraftlegends:coin_100"
+		},
+		{	
+			"item": "minecraftlegends:coin_100"
+		},
+		{	
+			"item": "minecraftlegends:coin_100"
+		},
+		{	
+			"item": "minecraftlegends:coin_100"
+		}
+    ],
+	"result": {
+		"item": "minecraftlegends:warmog_armor"
+	}
+	
+}

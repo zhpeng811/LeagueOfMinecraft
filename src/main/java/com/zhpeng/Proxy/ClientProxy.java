@@ -6,7 +6,8 @@ import com.zhpeng.Champions.Champions;
 import com.zhpeng.Events.TNTExplosionEvent;
 import com.zhpeng.Items.Items;
 import com.zhpeng.Shields.Shields;
-import com.zhpeng.Util.Constants;
+import com.zhpeng.SummonerSpells.SummonerSpells;
+import com.zhpeng.Utils.Constants;
 import com.zhpeng.Weapons.Weapons;
 
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
@@ -52,6 +53,9 @@ public class ClientProxy extends Proxy {
 				registerRender(ability);
 			}
 		}
+		for (Item spell : SummonerSpells.SPELLS) {
+			registerRender(spell);
+		}
 	}
 
 	public static void registerRender(Item item) {
@@ -82,6 +86,9 @@ public class ClientProxy extends Proxy {
 			for (Item ability : champion.ABILITIES) {
 				registry.registerAll(ability);
 			}
+		}
+		for (Item spell : SummonerSpells.SPELLS) {
+			registry.registerAll(spell);
 		}
 	}
 }

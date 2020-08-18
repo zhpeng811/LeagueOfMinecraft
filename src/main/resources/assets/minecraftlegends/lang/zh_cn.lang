@@ -4,6 +4,7 @@ itemGroup.minecraftlegends_items=英雄世界: 物品
 itemGroup.minecraftlegends_shields=英雄世界: 盾牌
 itemGroup.minecraftlegends_armors=英雄世界: 防具
 itemGroup.minecraftlegends_champions=英雄世界: 英雄
+itemGroup.minecraftlegends_summoner_spells=英雄世界: 召唤师技能
 
 # 剑
 item.death_dance.name=死亡之舞
@@ -20,8 +21,15 @@ item.pickaxe.name=十字镐
 item.cloak_of_agility.name=灵巧披风
 item.bloodthirster.name=饮血剑
 item.ravenous_hydra.name=贪欲九头蛇
+item.tiamat.name=提亚马特
+item.blasting_wand.name=爆裂魔杖
+item.needlessly_large_rod.name=无用大棒
 
 # 物品
+item.ability_refresh.name=重置冷却时间
+item.ability_refresh.tooltip=§6重置所有英雄以及召唤师技能的冷却时间,仅供测试使用.游戏内禁止使用!
+item.health_potion.name=生命药水
+item.health_potion.tooltip=消耗品,使用后会获得5秒的生命回复II效果
 item.coin_10.name=10金币
 item.coin_50.name=50金币
 item.coin_100.name=100金币
@@ -30,6 +38,8 @@ item.coin_1000.name=1000金币
 item.ruby_crystal.name=红水晶
 item.kindlegem.name=燃烧宝石
 item.rejuvenation_bead.name=治疗宝珠
+item.crystalline_bracer.name=晶体护腕
+item.amplifying_tome.name=增幅典籍
 
 # 盾牌
 item.ageis_of_the_legion.name=军团圣盾
@@ -43,6 +53,15 @@ item.spirit_visage.name=振奋铠甲
 item.thornmail.name=荆棘之甲
 item.bramble_vest.name=棘刺背心
 item.warden_mail.name=守望者铠甲
+item.warmog_armor.name=狂徒铠甲
+item.giant_belt.name=巨人腰带
+item.haunting_guise.name=幽魂面具
+item.liandry_torment.name=兰德里的折磨
+item.rabadon_deathcap.name=灭世者的死亡之帽
+item.boots_of_speed.name=速度之靴
+item.mercury_treads.name=水银之靴
+item.boots_of_swiftness.name=轻灵之靴
+
 
 # 英雄图标通用物品描述
 item.champion.tooltip=右键获得该英雄的技能
@@ -54,7 +73,7 @@ item.tiger_stance.tooltip=§b获得5秒的急迫II效果
 item.turtle_stance.name=灵龟姿态
 item.turtle_stance.tooltip=§b获得5秒的伤害吸收II效果
 item.bear_stance.name=巨熊姿态
-item.bear_stance.tooltip=§b获得5秒的速度II效果
+item.bear_stance.tooltip=§b获得5秒的速度IV效果
 item.phoenix_stance.name=火凤姿态
 item.phoenix_stance.tooltip=§b获得5秒的力量I效果
 
@@ -74,7 +93,7 @@ item.hymn_of_valor.tooltip=§b获得一瓶伤害I可投掷药水
 item.aria_of_perseverance.name=坚毅咏叹调
 item.aria_of_perseverance.tooltip=§b获得一瓶瞬间治疗II可投掷药水
 item.song_of_celerity.name=迅捷奏鸣曲
-item.song_of_celerity.tooltip=§b获得一瓶速度II可投掷药水
+item.song_of_celerity.tooltip=§b获得一瓶速度IV可投掷药水
 item.crescendo.name=狂舞终乐章
 item.crescendo.tooltip=§b获得一瓶瞬间伤害II,虚弱V,缓慢V可投掷药水
 
@@ -84,7 +103,7 @@ item.time_bomb.tooltip=§b扔出一个有延迟的TNT炸弹,该炸弹不会破�
 item.rewind.name=穿梭未来
 item.rewind.tooltip=§b重置§a定时炸弹§b和§a时光发条§b的冷却时间
 item.time_wrap.name=时光发条
-item.time_wrap.tooltip=§b获得5秒的速度II效果
+item.time_wrap.tooltip=§b获得5秒的速度IV效果
 item.chronoshift.name=时光倒流
 item.chronoshift.tooltip=§b获得一个不死图腾
 
@@ -92,13 +111,25 @@ item.teemo.name=迅捷斥候 - 提莫
 item.blinding_dart.name=致盲吹箭
 item.blinding_dart.tooltip=§b获得一瓶致盲II药水
 item.move_quick.name=小莫快跑
-item.move_quick.tooltip=§b获得5秒的速度II效果
+item.move_quick.tooltip=§b获得5秒的速度IV效果
 item.toxic_shot.name=毒性射击
 item.toxic_shot.tooltip=§b获得8只剧毒箭
 item.noxious_trap.name=种蘑菇
 item.noxious_trap.tooltip=§b获得一瓶剧毒V,缓慢V可投掷药水
 
+item.nunu.name=雪原双子 - 努努和威朗普
+item.consume.name=吞噬
+item.consume.tooltip=§b获得一瓶伤害II和一瓶瞬间治疗II药水
+item.biggest_snowball_ever.name=史上最大雪球!
+item.biggest_snowball_ever.tooltip=§b获得5秒的速度IV效果
+item.snowball_barrage.name=雪球发射
+item.snowball_barrage.tooltip=§b发射一个雪球,如果雪球命中敌人会对其造成4点伤害,如果敌人是玩家,会对其造成2秒的缓慢III效果
+item.absolute_zero.name=绝对零度
+item.absolute_zero.tooltip=§b获得一瓶瞬间伤害II,缓慢IV,凋零IV可投掷药水
+
 # 冷却时间描述
+tooltip.3_seconds_cooldown=§c3秒冷却时间
+tooltip.5_seconds_cooldown=§c5秒冷却时间
 tooltip.10_seconds_cooldown=§c10秒冷却时间
 tooltip.15_seconds_cooldown=§c15秒冷却时间
 tooltip.20_seconds_cooldown=§c20秒冷却时间
@@ -107,10 +138,20 @@ tooltip.30_seconds_cooldown=§c30秒冷却时间
 tooltip.40_seconds_cooldown=§c40秒冷却时间
 tooltip.100_seconds_cooldown=§c100秒冷却时间
 tooltip.120_seconds_cooldown=§c120秒冷却时间
+tooltip.150_seconds_cooldown=§c150秒冷却时间
+tooltip.180_seconds_cooldown=§c180秒冷却时间
 
-# 装备血量描述
-item.spectre_cowl.tooltip=§6+10最大生命值
-item.adaptive_helm.tooltip=§6+14最大生命值
+# summoner spells
+item.flash.name=闪现
+item.flash.tooltip=§6跟末影珍珠一样的使用方法
+item.ignite.name=点燃
+item.ignite.tooltip=§6获得一个单次使用的火焰附加II木剑
+item.heal.name=治疗
+item.heal.tooltip=§6获得10秒的生命恢复II效果
+item.barrier.name=屏障
+item.barrier.tooltip=§6获得10秒的伤害吸收III效果(额外多6颗心)
+item.ghost.name=疾跑
+item.ghost.tooltip=§6获得10秒的速度V效果
 
 # 消息
 message.already_obtained=你的物品栏中还有此技能的物品,再次使用该技能前请先使用该物品

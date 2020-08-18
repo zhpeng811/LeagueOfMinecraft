@@ -2,7 +2,7 @@ package com.zhpeng.Swords;
 
 import java.util.ArrayList;
 
-import com.zhpeng.Util.Constants;
+import com.zhpeng.Utils.Constants;
 
 import net.minecraft.item.Item;
 import net.minecraft.item.Item.ToolMaterial;
@@ -13,6 +13,7 @@ public class Swords {
 	
 	public static void addAllWeapons() {
 		float damageRatio = Constants.damageRatio;
+		float powerToDamageRatio = Constants.powerToDamageRatio;
 		float swordBaseDamage = Constants.swordBaseDamage;
 		int durability = Constants.swordDurability;
 		int unfinishedItemEnchantability = Constants.unfinishedItemEnchantability;
@@ -26,6 +27,9 @@ public class Swords {
 		addWeapon("phage", 3, durability, 3.0F, 15 * damageRatio - swordBaseDamage, unfinishedItemEnchantability);
 		addWeapon("bf_sword", 3, durability, 3.0F, 40 * damageRatio - swordBaseDamage, unfinishedItemEnchantability);
 		addWeapon("pickaxe", 3, durability, 3.0F, 25 * damageRatio - swordBaseDamage, unfinishedItemEnchantability);
+		addWeapon("tiamat", 3, durability, 3.0F, 25 * damageRatio - swordBaseDamage, unfinishedItemEnchantability);
+		addWeapon("blasting_wand", 3, durability, 3.0F, 40 * powerToDamageRatio - swordBaseDamage, unfinishedItemEnchantability);
+		addWeapon("needlessly_large_rod", 3, durability, 3.0F, 60 * powerToDamageRatio - swordBaseDamage, unfinishedItemEnchantability);
 		
 		// finished items
 		addWeapon("death_dance", 4, -1, 5.0F, 50 * damageRatio - swordBaseDamage, finishedItemEnchantability);

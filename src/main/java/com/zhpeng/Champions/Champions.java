@@ -12,5 +12,6 @@ public class Champions {
 		CHAMPIONS.add(new Sona());
 		CHAMPIONS.add(new Zilean());
 		CHAMPIONS.add(new Teemo());
+		CHAMPIONS.add(new Nunu());
 	}
 }

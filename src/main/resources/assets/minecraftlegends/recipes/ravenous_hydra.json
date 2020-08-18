@@ -1,0 +1,30 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	 "ingredients": [
+        {
+            "item": "minecraftlegends:tiamat"
+        },
+		{
+            "item": "minecraftlegends:vampiric_scepter"
+        },
+		{
+			"item": "minecraftlegends:pickaxe"
+		},
+		{	
+			"item": "minecraftlegends:coin_100"
+		},
+		{	
+			"item": "minecraftlegends:coin_100"
+		},
+		{	
+			"item": "minecraftlegends:coin_100"
+		},
+		{	
+			"item": "minecraftlegends:coin_100"
+		}
+    ],
+	"result": {
+		"item": "minecraftlegends:ravenous_hydra"
+	}
+	
+}

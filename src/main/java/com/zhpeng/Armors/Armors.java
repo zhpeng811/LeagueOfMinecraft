@@ -2,7 +2,7 @@ package com.zhpeng.Armors;
 
 import java.util.ArrayList;
 
-import com.zhpeng.Util.Constants;
+import com.zhpeng.Utils.Constants;
 
 import net.minecraft.init.SoundEvents;
 import net.minecraft.inventory.EntityEquipmentSlot;
@@ -16,9 +16,11 @@ public class Armors {
 	
 	public static void addAllArmors() {
 		float armorRatio = Constants.armorRatio;
+		float powerToArmorRatio = Constants.powerToArmorRatio;
 		float unfinishedArmorToughness = Constants.unfinishedArmorToughness;
 		float finishedArmorToughness = Constants.finishedArmorToughness;
 		float healthRatio = Constants.healthRatio;
+		float speedRatio = Constants.speedRatio;
 		int armorDurability = Constants.armorDurability;
 		int unfinishedItemEnchantability = Constants.unfinishedItemEnchantability;
 		int finishedItemEnchantability = Constants.finishedItemEnchantability;
@@ -79,6 +81,41 @@ public class Armors {
 				EntityEquipmentSlot.CHEST,
 				0F * healthRatio
 		);
+		addArmor(
+				"giant_belt",
+				"minecraftlegends:giant_belt",
+				armorDurability,
+				new int[] { 0, 0, 0, 0},
+				unfinishedItemEnchantability, 
+				unfinishedArmorToughness, 
+				SoundEvents.ITEM_ARMOR_EQUIP_IRON,
+				EntityEquipmentSlot.LEGS,
+				380F * healthRatio
+		);
+		addArmor(
+				"haunting_guise",
+				"minecraftlegends:haunting_guise",
+				armorDurability,
+				new int[] { 0, 0, 0, (int) (35 * powerToArmorRatio)},
+				unfinishedItemEnchantability, 
+				unfinishedArmorToughness, 
+				SoundEvents.ITEM_ARMOR_EQUIP_IRON,
+				EntityEquipmentSlot.HEAD,
+				200F * healthRatio
+		);
+		addArmor(
+				"boots_of_speed",
+				"minecraftlegends:boots_of_speed",
+				armorDurability,
+				new int[] { 0, 0, 0, 0},
+				unfinishedItemEnchantability, 
+				unfinishedArmorToughness, 
+				SoundEvents.ITEM_ARMOR_EQUIP_LEATHER,
+				EntityEquipmentSlot.FEET,
+				0F * healthRatio,
+				25F * speedRatio
+		);
+		
 		
 		// finished armor
 		addArmor(
@@ -113,6 +150,63 @@ public class Armors {
 				SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND,
 				EntityEquipmentSlot.CHEST,
 				250F * healthRatio
+		);
+		addArmor(
+				"warmog_armor",
+				"minecraftlegends:warmog_armor",
+				armorDurability,
+				new int[] { 0, 0, 0, 0 },
+				finishedItemEnchantability,
+				finishedArmorToughness,
+				SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND,
+				EntityEquipmentSlot.CHEST,
+				800F * healthRatio
+		);
+		addArmor(
+				"liandry_torment",
+				"minecraftlegends:liandry_torment",
+				armorDurability,
+				new int[] { 0, 0, 0, (int) (75 * powerToArmorRatio) },
+				finishedItemEnchantability,
+				finishedArmorToughness,
+				SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND,
+				EntityEquipmentSlot.HEAD,
+				300F * healthRatio
+		);
+		addArmor(
+				"rabadon_deathcap",
+				"minecraftlegends:rabadon_deathcap",
+				armorDurability,
+				new int[] { 0, 0, 0, (int) (120 * powerToArmorRatio) },
+				finishedItemEnchantability,
+				finishedArmorToughness,
+				SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND,
+				EntityEquipmentSlot.HEAD,
+				0F * healthRatio
+		);
+		addArmor(
+				"mercury_treads",
+				"minecraftlegends:mercury_treads",
+				armorDurability,
+				new int[] { (int) (25 * armorRatio), 0, 0, 0 },
+				finishedItemEnchantability,
+				finishedArmorToughness,
+				SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND,
+				EntityEquipmentSlot.FEET,
+				0F * healthRatio,
+				45F * speedRatio
+		);
+		addArmor(
+				"boots_of_swiftness",
+				"minecraftlegends:boots_of_swiftness",
+				armorDurability,
+				new int[] { 0, 0, 0, 0 },
+				finishedItemEnchantability,
+				finishedArmorToughness,
+				SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND,
+				EntityEquipmentSlot.FEET,
+				0F * healthRatio,
+				60F * speedRatio
 		);
 	}
 	
@@ -151,5 +245,30 @@ public class Armors {
 		);
 		Item armor = new CustomArmor(material, 1, equipmentSlotIn, name, addedMaxHealth);
 		ARMORS.add(armor);
+	}
+	
+	private static void addArmor(
+			String name,
+			String textureName,
+			int durability,
+			int[] reductionAmounts,
+			int enchantability,
+			float toughness,
+			SoundEvent soundOnEquip,
+			EntityEquipmentSlot equipmentSlotIn,
+			float addedMaxHealth,
+			float movementSpeed
+	) {
+			ArmorMaterial material = EnumHelper.addArmorMaterial(
+					name, 
+					textureName, 
+					durability, 
+					reductionAmounts, 
+					enchantability, 
+					soundOnEquip, 
+					toughness
+			);
+			Item armor = new CustomArmor(material, 1, equipmentSlotIn, name, addedMaxHealth, movementSpeed);
+			ARMORS.add(armor);
 	}
 }

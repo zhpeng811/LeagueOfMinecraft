@@ -3,7 +3,7 @@ package com.zhpeng.Champions;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.zhpeng.Util.Constants;
+import com.zhpeng.Utils.Constants;
 
 import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.entity.player.EntityPlayer;
@@ -68,12 +68,16 @@ class SongOfCelerity extends AbilityBase {
 	}
 
 	protected void rightClickAction(World worldIn, EntityPlayer playerIn, EnumHand handIn) {
-		ItemStack speedPotion = PotionUtils.addPotionToItemStack(new ItemStack(Items.SPLASH_POTION), PotionTypes.STRONG_SWIFTNESS);
+		ItemStack splashPotion = new ItemStack(Items.SPLASH_POTION);
+		ArrayList<PotionEffect> effects = new ArrayList<>();
+		int ticksPerSecond = Constants.ticksPerSecond;
+		effects.add(new PotionEffect(MobEffects.SPEED, 8 * ticksPerSecond , 3));
+		ItemStack customPotion = PotionUtils.appendEffects(splashPotion, effects);
 
-	    if (checkForItemInInventory(speedPotion, playerIn.inventory)) {
+	    if (checkForItemInInventory(customPotion, playerIn.inventory)) {
 	        playerIn.sendMessage(new TextComponentString(I18n.translateToLocal("message.already_obtained")));
 	    } else {
-	        playerIn.inventory.addItemStackToInventory(speedPotion); 
+	        playerIn.inventory.addItemStackToInventory(customPotion); 
 	        addItemCooldown(playerIn, 20);
 	    }
 	}

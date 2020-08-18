@@ -4,6 +4,7 @@ itemGroup.minecraftlegends_items=Minecraft Legends: Items
 itemGroup.minecraftlegends_shields=Minecraft Legends: Shields
 itemGroup.minecraftlegends_armors=Minecraft Legends: Armors
 itemGroup.minecraftlegends_champions=Minecraft Legends: Champions
+itemGroup.minecraftlegends_summoner_spells=Minecraft Legends: Summoner Spells
 
 # swords
 item.death_dance.name=Death Dance
@@ -20,8 +21,14 @@ item.pickaxe.name=Pickaxe
 item.cloak_of_agility.name=Cloak of Agility
 item.bloodthirster.name=Bloodthirster
 item.ravenous_hydra.name=Ravenous Hydra
+item.tiamat.name=Tiamat
+item.blasting_wand.name=Blasting Wand
 
 # items
+item.ability_refresh.name=Ability Refresh
+item.ability_refresh.tooltip=§6Refresh the cooldown of all champion and summoner spells. Only used for testing, please do not use this ingame!
+item.health_potion.name=Health Potion
+item.health_potion.tooltip=Consumable item, gain 5 seconds of regeneration II buff
 item.coin_10.name=10 Coins
 item.coin_50.name=50 Coins
 item.coin_100.name=100 Coins
@@ -30,6 +37,8 @@ item.coin_1000.name=1000 Coins
 item.ruby_crystal.name=Ruby Crystal
 item.kindlegem.name=Kindlegem
 item.rejuvenation_bead.name=Rejuvenation Bead
+item.crystalline_bracer.name=Crystalline Bracer
+item.amplifying_tome.name=Amplifying Tome
 
 # Shield
 item.ageis_of_the_legion.name=Aegis of the Legion
@@ -43,6 +52,15 @@ item.spirit_visage.name=Spirit Visage
 item.thornmail.name=Thornmail
 item.bramble_vest.name=Bramble Vest
 item.warden_mail.name=Warden's Mail
+item.warmog_armor.name=Warmog's Armor
+item.giant_belt.name=Giant's Belt
+item.haunting_guise.name=Haunting Guise
+item.liandry_torment.name=Liandry's Torment
+item.rabadon_deathcap.name=Rabadon's Deathcap
+item.needlessly_large_rod.name=Needlessly Large Rod
+item.boots_of_speed.name=Boots of Speed
+item.mercury_treads.name=Mercury's Treads
+item.boots_of_swiftness.name=Boots of Swiftness
 
 # General Tooltip on all champions
 item.champion.tooltip=Right Click to obtain the abilities for this champion
@@ -54,7 +72,7 @@ item.tiger_stance.tooltip=§bGain 5 seconds of Haste II buff
 item.turtle_stance.name=Turtle Stance
 item.turtle_stance.tooltip=§bGain 5 seconds of Absorption II buff
 item.bear_stance.name=Bear Stance
-item.bear_stance.tooltip=§bGain 5 seconds of Speed II buff
+item.bear_stance.tooltip=§bGain 5 seconds of Speed IV buff
 item.phoenix_stance.name=Phoenix Stance
 item.phoenix_stance.tooltip=§bGain 5 seconds of Strength I buff
 
@@ -74,7 +92,7 @@ item.hymn_of_valor.tooltip=§bObtain a splash potion of harming
 item.aria_of_perseverance.name=Aria of Perseverance
 item.aria_of_perseverance.tooltip=§bObtain a splash potion of strong healing
 item.song_of_celerity.name=Song of Celerity
-item.song_of_celerity.tooltip=§bObtain a splash potion of strong swiftness
+item.song_of_celerity.tooltip=§bObtain a splash potion of speed IV
 item.crescendo.name=Crescendo
 item.crescendo.tooltip=§bObtain a splash potion of instant damage II, weakness V, slowness V
 
@@ -84,7 +102,7 @@ item.time_bomb.tooltip=§bThrows a TNT bomb that will begin explode upon landing
 item.rewind.name=Rewind
 item.rewind.tooltip=§bReset the cooldown time of §aTime Bomb §band §aTime Wrap
 item.time_wrap.name=Time Wrap
-item.time_wrap.tooltip=§bGain 5 seconds of Speed II buff
+item.time_wrap.tooltip=§bGain 5 seconds of Speed IV buff
 item.chronoshift.name=Chronoshift
 item.chronoshift.tooltip=§bObtain a Totem of Undying
 
@@ -92,13 +110,25 @@ item.teemo.name=The Swift Scount - Teemo
 item.blinding_dart.name=Blinding Dart
 item.blinding_dart.tooltip=§bObtain a splash potion of strong blindness
 item.move_quick.name=Move Quick
-item.move_quick.tooltip=§bGain 5 seconds of Speed II buff
+item.move_quick.tooltip=§bGain 5 seconds of Speed IV buff
 item.toxic_shot.name=Toxic Shot
 item.toxic_shot.tooltip=§bObtain 8 strong poison arrow
 item.noxious_trap.name=Noxious Trap
 item.noxious_trap.tooltip=§bObtain a splash potion of poison V, slowness V
 
+item.nunu.name=The Boy and His Yeti - Nunu & Willump
+item.consume.name=Consume
+item.consume.tooltip=§bObtain a splash potion of damage II and a potion of healing II
+item.biggest_snowball_ever.name=Biggest Snowball Ever!
+item.biggest_snowball_ever.tooltip=§bObtain 5 seconds of Speed IV buff
+item.snowball_barrage.name=Snowball Barrage
+item.snowball_barrage.tooltip=§bshoots a snowball, the snowball will deal 4 damage, and apply a 2 seconds slowness III buff if it hits a player
+item.absolute_zero.name=Absolute Zero
+item.absolute_zero.tooltip=§bObtain a splash potion of instant damage II, weakness IV, wither IV
+
 # cooldown tooltip
+tooltip.3_seconds_cooldown=§c3 Seconds Cooldown
+tooltip.5_seconds_cooldown=§c5 Seconds Cooldown
 tooltip.10_seconds_cooldown=§c10 Seconds Cooldown
 tooltip.15_seconds_cooldown=§c15 Seconds Cooldown
 tooltip.20_seconds_cooldown=§c20 Seconds Cooldown
@@ -107,10 +137,20 @@ tooltip.30_seconds_cooldown=§c30 Seconds Cooldown
 tooltip.40_seconds_cooldown=§c40 Seconds Cooldown
 tooltip.100_seconds_cooldown=§c100 Seconds Cooldown
 tooltip.120_seconds_cooldown=§c120 Seconds Cooldown
+tooltip.150_seconds_cooldown=§c150 Seconds Cooldown
+tooltip.180_seconds_cooldown=§c180 Seconds Cooldown
 
-# armor health tooltip
-item.spectre_cowl.tooltip=§6+10 maximum health
-item.adaptive_helm.tooltip=§6+14 maximum health
+# summoner spells
+item.flash.name=Flash
+item.flash.tooltip=§6Use it like a ender pearl
+item.ignite.name=Ignite
+item.ignite.tooltip=§6Obtain a one-use wooden sword with fire aspect II
+item.heal.name=Heal
+item.heal.tooltip=§6Grants 10 seconds of regeneration II buff
+item.barrier.name=Barrier
+item.barrier.tooltip=§6Grants 10 seconds of absorption III buff(extra 6 hearts)
+item.ghost.name=Ghost
+item.ghost.tooltip=§6Grants 10 seconds of speed V buff
 
 # messages
 message.already_obtained=You still have the item for this ability, please use the item first before activating this ability again

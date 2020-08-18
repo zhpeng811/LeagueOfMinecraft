@@ -4,7 +4,7 @@ import java.util.List;
 
 import javax.annotation.Nullable;
 
-import com.zhpeng.Util.Constants;
+import com.zhpeng.Utils.Constants;
 
 import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.entity.player.EntityPlayer;
@@ -21,6 +21,7 @@ import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
 public abstract class AbilityBase extends Item {
+	
 	public AbilityBase(String name) {
 	    this.setRegistryName(name);
 	    this.setUnlocalizedName(name);
@@ -32,7 +33,7 @@ public abstract class AbilityBase extends Item {
 		playerIn.addPotionEffect(new PotionEffect(potionType, duration * ticksPerSecond, amplifier));
 	}
 	
-	protected void removeItemCooldown(EntityPlayer playerIn, Item item) {
+	public void removeItemCooldown(EntityPlayer playerIn, Item item) {
 		playerIn.getCooldownTracker().removeCooldown(item);
 	}
 	
