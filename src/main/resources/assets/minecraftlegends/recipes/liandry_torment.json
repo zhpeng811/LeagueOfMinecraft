@@ -1,0 +1,27 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	 "ingredients": [
+        {
+            "item": "minecraftlegends:haunting_guise"
+        },
+		{
+            "item": "minecraftlegends:blasting_wand"
+        },
+		{
+			"item": "minecraftlegends:coin_500"
+		},
+		{	
+			"item": "minecraftlegends:coin_100"
+		},
+		{	
+			"item": "minecraftlegends:coin_100"
+		},
+		{	
+			"item": "minecraftlegends:coin_50"
+		}
+    ],
+	"result": {
+		"item": "minecraftlegends:liandry_torment"
+	}
+	
+}

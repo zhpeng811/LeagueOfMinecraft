@@ -1,0 +1,20 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"   ",
+		"CGC",
+		"GGG"
+	],
+	"key": {
+		"C": {
+			"item": "minecraftlegends:cloth_armor"
+		},
+		"G": {
+			"item": "minecraftlegends:coin_100"
+		}
+	},
+	"result": {
+		"item": "minecraftlegends:bramble_vest"
+	}
+	
+}

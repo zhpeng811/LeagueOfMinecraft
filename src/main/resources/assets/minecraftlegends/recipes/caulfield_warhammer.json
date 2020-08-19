@@ -1,0 +1,20 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"GG ",
+		"GGL",
+		" L "
+	],
+	"key": {
+		"L": {
+			"item": "minecraftlegends:long_sword"
+		},
+		"G": {
+			"item": "minecraftlegends:coin_100"
+		}
+	},
+	"result": {
+		"item": "minecraftlegends:caulfield_warhammer"
+	}
+	
+}

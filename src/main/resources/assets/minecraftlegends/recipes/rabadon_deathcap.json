@@ -1,0 +1,21 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	 "ingredients": [
+        {
+            "item": "minecraftlegends:needlessly_large_rod"
+        },
+		{
+            "item": "minecraftlegends:needlessly_large_rod"
+        },
+		{
+			"item": "minecraftlegends:coin_1000"
+		},
+		{	
+			"item": "minecraftlegends:coin_100"
+		}
+    ],
+	"result": {
+		"item": "minecraftlegends:rabadon_deathcap"
+	}
+	
+}

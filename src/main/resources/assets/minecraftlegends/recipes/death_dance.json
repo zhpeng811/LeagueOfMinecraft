@@ -1,0 +1,21 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	 "ingredients": [
+        {
+            "item": "minecraftlegends:ageis_of_the_legion"
+        },
+		{
+            "item": "minecraftlegends:caulfield_warhammer"
+        },
+		{
+            "item": "minecraftlegends:vampiric_scepter"
+        },
+		{
+			"item": "minecraftlegends:coin_500"
+		}
+    ],
+	"result": {
+		"item": "minecraftlegends:death_dance"
+	}
+	
+}

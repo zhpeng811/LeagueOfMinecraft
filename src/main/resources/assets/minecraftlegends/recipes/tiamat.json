@@ -1,0 +1,21 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	 "ingredients": [
+        {
+            "item": "minecraftlegends:long_sword"
+        },
+		{
+            "item": "minecraftlegends:long_sword"
+        },
+		{
+			"item": "minecraftlegends:rejuvenation_bead"
+		},
+		{	
+			"item": "minecraftlegends:coin_500"
+		}
+    ],
+	"result": {
+		"item": "minecraftlegends:tiamat"
+	}
+	
+}

@@ -1,0 +1,18 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	 "ingredients": [
+        {
+            "item": "minecraftlegends:boots_of_speed"
+        },
+		{
+            "item": "minecraftlegends:coin_500"
+        },
+		{
+			"item": "minecraftlegends:coin_100"
+		}
+    ],
+	"result": {
+		"item": "minecraftlegends:boots_of_swiftness"
+	}
+	
+}

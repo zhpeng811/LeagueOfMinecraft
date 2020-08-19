@@ -1,0 +1,13 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	 "ingredients": [
+        {
+            "item": "minecraftlegends:coin_1000"
+        }
+    ],
+	"result": {
+		"item": "minecraftlegends:coin_500",
+		"count": 2
+	}
+	
+}

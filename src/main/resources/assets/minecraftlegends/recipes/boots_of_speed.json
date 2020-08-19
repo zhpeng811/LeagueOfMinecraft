@@ -1,0 +1,17 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"   ",
+		"  C",
+		" CC"
+	],
+	"key": {
+		"C": {
+			"item": "minecraftlegends:coin_100"
+		}
+	},
+	"result": {
+		"item": "minecraftlegends:boots_of_speed"
+	}
+	
+}

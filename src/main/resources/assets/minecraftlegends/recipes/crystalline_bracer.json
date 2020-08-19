@@ -1,0 +1,18 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	 "ingredients": [
+        {
+            "item": "minecraftlegends:ruby_crystal"
+        },
+        {
+            "item": "minecraftlegends:rejuvenation_bead"
+        },
+		{
+			"item": "minecraftlegends:coin_100"
+		}
+    ],
+	"result": {
+		"item": "minecraftlegends:crystalline_bracer"
+	}
+	
+}

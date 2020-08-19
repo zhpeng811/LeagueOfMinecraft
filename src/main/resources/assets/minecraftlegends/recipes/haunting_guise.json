@@ -1,0 +1,30 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	 "ingredients": [
+        {
+            "item": "minecraftlegends:ruby_crystal"
+        },
+		{
+            "item": "minecraftlegends:amplifying_tome"
+        },
+		{
+			"item": "minecraftlegends:coin_500"
+		},
+		{	
+			"item": "minecraftlegends:coin_100"
+		},
+		{
+			"item": "minecraftlegends:coin_50"
+		},
+		{
+			"item": "minecraftlegends:coin_10"
+		},
+		{
+			"item": "minecraftlegends:coin_10"
+		}
+    ],
+	"result": {
+		"item": "minecraftlegends:haunting_guise"
+	}
+	
+}

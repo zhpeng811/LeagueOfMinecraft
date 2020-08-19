@@ -1,0 +1,24 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	 "ingredients": [
+        {
+            "item": "minecraftlegends:caulfield_warhammer"
+        },
+		{
+            "item": "minecraftlegends:serrated_dirk"
+        },
+		{
+			"item": "minecraftlegends:coin_500"
+		},
+		{
+			"item": "minecraftlegends:coin_100"
+		},
+		{
+			"item": "minecraftlegends:coin_100"
+		}
+    ],
+	"result": {
+		"item": "minecraftlegends:duskblade_of_draktharr"
+	}
+	
+}
