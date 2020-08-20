@@ -42,7 +42,7 @@ public class AbilityRefresh extends ItemsBase {
 			}
 			stack.shrink(1);
 	    }
-		return ActionResult.resultPass(playerIn.getHeldItem(handIn));
+		return ActionResult.resultPass(stack);
 	};
 	
 	@OnlyIn(Dist.CLIENT)

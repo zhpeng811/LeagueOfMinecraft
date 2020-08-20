@@ -7,7 +7,6 @@ import javax.annotation.Nullable;
 import com.zhpeng.Utils.Constants;
 
 import net.minecraft.client.util.ITooltipFlag;
-import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.item.Item;
@@ -15,19 +14,23 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.potion.Effect;
 import net.minecraft.potion.EffectInstance;
 import net.minecraft.util.ActionResult;
-import net.minecraft.util.EnumActionResult;
-import net.minecraft.util.EnumHand;
 import net.minecraft.util.Hand;
+import net.minecraft.util.text.ITextComponent;
 import net.minecraft.world.World;
-import net.minecraftforge.fml.relauncher.Side;
-import net.minecraftforge.fml.relauncher.SideOnly;
+import net.minecraftforge.api.distmarker.Dist;
+import net.minecraftforge.api.distmarker.OnlyIn;
 
 public abstract class AbilityBase extends Item {
 	
+	private String name;
+	
 	public AbilityBase(String name) {
-	    this.setRegistryName(name);
-	    this.setUnlocalizedName(name);
-	    this.maxStackSize = 1;
+		super(new Item.Properties().maxStackSize(1));
+		this.name = name;
+	}
+	
+	public String getAbilityName() {
+		return this.name;
 	}
 	
 	protected void addPotionEffect(PlayerEntity playerIn, Effect potionType, int duration, int amplifier) {
@@ -68,18 +71,18 @@ public abstract class AbilityBase extends Item {
         return false;
 	}
 	
-	public ActionResult<ItemStack> onItemRightClick(World worldIn, EntityPlayer playerIn, EnumHand handIn) {
+	public ActionResult<ItemStack> onItemRightClick(World worldIn, PlayerEntity playerIn, Hand handIn) {
 		ItemStack stack = playerIn.getHeldItem(handIn);
 		
 		if (!worldIn.isRemote) {
 			rightClickAction(worldIn, playerIn, handIn);
 	    }
 		
-		return new ActionResult<ItemStack>(EnumActionResult.SUCCESS, stack);
+		return ActionResult.resultPass(stack);
 	};
 
-	@SideOnly(Side.CLIENT)
-	public abstract void addInformation(ItemStack stack, @Nullable World world, List<String> tooltip, ITooltipFlag flagIn);
+	@OnlyIn(Dist.CLIENT)
+	public abstract void addInformation(ItemStack stack, @Nullable World worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn);
 	
 }
 

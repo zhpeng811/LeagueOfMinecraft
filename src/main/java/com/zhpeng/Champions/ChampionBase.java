@@ -5,34 +5,35 @@ import java.util.List;
 
 import javax.annotation.Nullable;
 
-import com.zhpeng.MinecraftLegends;
-
 import net.minecraft.client.util.ITooltipFlag;
-import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.entity.player.InventoryPlayer;
+import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.ActionResult;
-import net.minecraft.util.EnumActionResult;
-import net.minecraft.util.EnumHand;
-import net.minecraft.util.text.translation.I18n;
+import net.minecraft.util.Hand;
+import net.minecraft.util.text.ITextComponent;
+import net.minecraft.util.text.TranslationTextComponent;
 import net.minecraft.world.World;
-import net.minecraftforge.fml.relauncher.Side;
-import net.minecraftforge.fml.relauncher.SideOnly;
+import net.minecraftforge.api.distmarker.Dist;
+import net.minecraftforge.api.distmarker.OnlyIn;
 
 public abstract class ChampionBase extends Item {
-	public final ArrayList<Item> ABILITIES = new ArrayList<>();
+	public final ArrayList<AbilityBase> ABILITIES = new ArrayList<>();
+	private String name;
 	
-	public ChampionBase(String name) {
-	    this.setRegistryName(name);
-	    this.setUnlocalizedName(name);
-	    this.maxStackSize = 1;
-	    this.setCreativeTab(MinecraftLegends.creativeTabChampions);
+	public ChampionBase(String name, Item.Properties prop) {
+	    super(prop);
+	    this.name = name;
 	}
 	
-	public ActionResult<ItemStack> onItemRightClick(World worldIn, EntityPlayer playerIn, EnumHand handIn) {
+	public String getChampionName() {
+		return this.name;
+	}
+	
+	public ActionResult<ItemStack> onItemRightClick(World worldIn, PlayerEntity playerIn, Hand handIn) {
         ItemStack stack = playerIn.getHeldItem(handIn);
-        InventoryPlayer inventory = playerIn.inventory;
+        PlayerInventory inventory = playerIn.inventory;
         
         if (!worldIn.isRemote) {
         	inventory.deleteStack(stack);
@@ -41,11 +42,11 @@ public abstract class ChampionBase extends Item {
         	}
         }
 
-        return new ActionResult<ItemStack>(EnumActionResult.SUCCESS, stack);
+        return ActionResult.resultPass(stack);
     }
 	
-	@SideOnly(Side.CLIENT)
-	public void addInformation(ItemStack stack, @Nullable World world, List<String> tooltip, ITooltipFlag flagIn) {
-		 tooltip.add(I18n.translateToLocal("item.champion.tooltip"));
+	@OnlyIn(Dist.CLIENT)
+	public void addInformation(ItemStack stack, @Nullable World world, List<ITextComponent> tooltip, ITooltipFlag flagIn) {
+		 tooltip.add(new TranslationTextComponent("item.minecraftlegends.champion.tooltip"));
 	};
 }

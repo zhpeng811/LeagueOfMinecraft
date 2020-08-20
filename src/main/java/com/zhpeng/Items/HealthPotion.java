@@ -34,7 +34,7 @@ public class HealthPotion extends ItemsBase {
 			stack.shrink(1);
 			playerIn.getCooldownTracker().setCooldown(this, 5 * ticksPerSecond);
 	    }
-		return ActionResult.resultPass(playerIn.getHeldItem(handIn));
+		return ActionResult.resultPass(stack);
 	};
 	
 	@OnlyIn(Dist.CLIENT)

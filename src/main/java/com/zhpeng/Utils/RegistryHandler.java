@@ -2,11 +2,17 @@ package com.zhpeng.Utils;
 
 import com.zhpeng.Armors.ArmorBase;
 import com.zhpeng.Armors.Armors;
+import com.zhpeng.Champions.AbilityBase;
+import com.zhpeng.Champions.ChampionBase;
+import com.zhpeng.Champions.Champions;
+import com.zhpeng.Items.AbilityRefresh;
 import com.zhpeng.Items.HealthPotion;
 import com.zhpeng.Items.Items;
 import com.zhpeng.Items.ItemsBase;
 import com.zhpeng.Shields.ShieldBase;
 import com.zhpeng.Shields.Shields;
+import com.zhpeng.SummonerSpells.SpellBase;
+import com.zhpeng.SummonerSpells.SummonerSpells;
 import com.zhpeng.Swords.SwordBase;
 import com.zhpeng.Swords.Swords;
 
@@ -28,6 +34,8 @@ public class RegistryHandler {
 		registerWeapon();
 		registerShield();
 		registerItem();
+		registerChampions();
+		registerSpells();
 	}
 	
 	private static void registerArmor() {
@@ -53,5 +61,24 @@ public class RegistryHandler {
 			ITEMS.register(item.getName(), () -> new ItemsBase());
 		}
 		ITEMS.register("health_potion", () -> new HealthPotion());
+		ITEMS.register("ability_refresh", () -> new AbilityRefresh());
 	}
+	
+	private static void registerChampions() {
+		Champions.addAllChampions();
+		for (ChampionBase champion : Champions.CHAMPIONS) {
+			ITEMS.register(champion.getChampionName(), () -> champion);
+			for (AbilityBase ability : champion.ABILITIES) {
+				ITEMS.register(ability.getAbilityName(), () -> ability);
+			}
+		}
+	}
+	
+	private static void registerSpells() {
+		SummonerSpells.addAllSpells();
+		for (SpellBase spell : SummonerSpells.SPELLS) {
+			ITEMS.register(spell.getSpellName(), () -> spell);
+		}
+	}
+
 }

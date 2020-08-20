@@ -58,7 +58,7 @@
 	"item.minecraftlegends.mercury_treads": "Mercury's Treads",
 	"item.minecraftlegends.boots_of_swiftness": "Boots of Swiftness",
 
-	"item.minecraftlegends.champion.tooltip": "Right Click to obtain the abilities for this champion",
+	"item.minecraftlegends.champion.tooltip": "§6Right Click to obtain the abilities for this champion",
 
 	"item.minecraftlegends.udyr": "The Spirit Walker - Udyr",
 	"item.minecraftlegends.tiger_stance": "Tiger Stance",
@@ -78,11 +78,11 @@
 	"item.minecraftlegends.contaminate": "Contaminate",
 	"item.minecraftlegends.contaminate.tooltip": "§bObtain 8 strong poison arrow",
 	"item.minecraftlegends.spray_and_pray": "Spray and Pray",
-	"item.minecraftlegends.spray_and_pray.tooltip": "§bGain 20 seconds of Strength II buff",
+	"item.minecraftlegends.spray_and_pray.tooltip": "§bGain 15 seconds of Strength II buff",
 
 	"item.minecraftlegends.sona": "Maven of The Strings - Sona",
 	"item.minecraftlegends.hymn_of_valor": "Hymn of Valor",
-	"item.minecraftlegends.hymn_of_valor.tooltip": "§bObtain a splash potion of harming",
+	"item.minecraftlegends.hymn_of_valor.tooltip": "§bObtain a splash potion of strong harming",
 	"item.minecraftlegends.aria_of_perseverance": "Aria of Perseverance",
 	"item.minecraftlegends.aria_of_perseverance.tooltip": "§bObtain a splash potion of strong healing",
 	"item.minecraftlegends.song_of_celerity": "Song of Celerity",

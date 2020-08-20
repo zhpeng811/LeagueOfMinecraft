@@ -58,7 +58,7 @@
 	"item.minecraftlegends.mercury_treads": "水银之靴",
 	"item.minecraftlegends.boots_of_swiftness": "轻灵之靴",
 
-	"item.minecraftlegends.champion.tooltip": "右键获得该英雄的技能",
+	"item.minecraftlegends.champion.tooltip": "§6右键获得该英雄的技能",
 
 	"item.minecraftlegends.udyr": "兽灵行者 - 乌迪尔",
 	"item.minecraftlegends.tiger_stance": "猛虎姿态",
@@ -78,11 +78,11 @@
 	"item.minecraftlegends.contaminate": "毒性爆发",
 	"item.minecraftlegends.contaminate.tooltip": "§b获得8只剧毒箭",
 	"item.minecraftlegends.spray_and_pray": "火力全开",
-	"item.minecraftlegends.spray_and_pray.tooltip": "§b获得20秒的力量II效果",
+	"item.minecraftlegends.spray_and_pray.tooltip": "§b获得15秒的力量II效果",
 
 	"item.minecraftlegends.sona": "琴瑟仙女 - 娑娜",
 	"item.minecraftlegends.hymn_of_valor": "英勇赞美诗",
-	"item.minecraftlegends.hymn_of_valor.tooltip": "§b获得一瓶伤害I可投掷药水",
+	"item.minecraftlegends.hymn_of_valor.tooltip": "§b获得一瓶伤害II可投掷药水",
 	"item.minecraftlegends.aria_of_perseverance": "坚毅咏叹调",
 	"item.minecraftlegends.aria_of_perseverance.tooltip": "§b获得一瓶瞬间治疗II可投掷药水",
 	"item.minecraftlegends.song_of_celerity": "迅捷奏鸣曲",

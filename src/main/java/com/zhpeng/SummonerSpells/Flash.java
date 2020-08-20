@@ -2,33 +2,39 @@ package com.zhpeng.SummonerSpells;
 
 import java.util.List;
 
+import javax.annotation.Nullable;
+
 import net.minecraft.client.util.ITooltipFlag;
-import net.minecraft.entity.item.EntityEnderPearl;
-import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.init.SoundEvents;
+import net.minecraft.entity.item.EnderPearlEntity;
+import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
-import net.minecraft.util.EnumHand;
+import net.minecraft.util.Hand;
 import net.minecraft.util.SoundCategory;
-import net.minecraft.util.text.translation.I18n;
+import net.minecraft.util.SoundEvents;
+import net.minecraft.util.text.ITextComponent;
+import net.minecraft.util.text.TranslationTextComponent;
 import net.minecraft.world.World;
+import net.minecraftforge.api.distmarker.Dist;
+import net.minecraftforge.api.distmarker.OnlyIn;
 
 public class Flash extends SpellBase {
-	public Flash() {
-		super("flash");
+	public Flash(Item.Properties prop) {
+		super("flash", prop);
 	}
 
-	protected void rightClickAction(World worldIn, EntityPlayer playerIn, EnumHand handIn) {
-		worldIn.playSound((EntityPlayer)null, playerIn.posX, playerIn.posY, playerIn.posZ, SoundEvents.ENTITY_ENDERPEARL_THROW, SoundCategory.NEUTRAL, 0.5F, 0.4F / (itemRand.nextFloat() * 0.4F + 0.8F));
-		EntityEnderPearl entityEnderPearl = new EntityEnderPearl(worldIn, playerIn);
+	protected void rightClickAction(World worldIn, PlayerEntity playerIn, Hand handIn) {
+		worldIn.playSound((PlayerEntity)null, playerIn.getPosX(), playerIn.getPosY(), playerIn.getPosZ(), SoundEvents.ENTITY_ENDER_PEARL_THROW, SoundCategory.NEUTRAL, 0.5F, 0.4F / (random.nextFloat() * 0.4F + 0.8F));
+		EnderPearlEntity entityEnderPearl = new EnderPearlEntity(worldIn, playerIn);
 		entityEnderPearl.shoot(playerIn, playerIn.rotationPitch, playerIn.rotationYaw, 0.0F, 1.5F, 1.0F);
-        worldIn.spawnEntity(entityEnderPearl);
+        worldIn.addEntity(entityEnderPearl);
         addItemCooldown(playerIn, 180);
 	}
 
-	@Override
-	public void addInformation(ItemStack stack, World world, List<String> tooltip, ITooltipFlag flagIn) {
-		tooltip.add(I18n.translateToLocal("item.flash.tooltip"));
-		tooltip.add(I18n.translateToLocal("tooltip.180_seconds_cooldown"));
+	@OnlyIn(Dist.CLIENT)
+	public void addInformation(ItemStack stack, @Nullable World world, List<ITextComponent> tooltip, ITooltipFlag flagIn) {
+		tooltip.add(new TranslationTextComponent("item.minecraftlegends.flash.tooltip"));
+		tooltip.add(new TranslationTextComponent("tooltip.180_seconds_cooldown"));
 	}
 
 }
